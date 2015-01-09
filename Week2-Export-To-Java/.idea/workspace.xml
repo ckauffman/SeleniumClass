@@ -58,8 +58,8 @@
       <file leaf-file-name="JenkinsUserTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/JenkinsUserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40869564" vertical-offset="190" max-vertical-offset="765">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.4678261" vertical-offset="190" max-vertical-offset="765">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,8 +98,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="494" />
-    <option name="y" value="177" />
+    <option name="x" value="661" />
+    <option name="y" value="190" />
     <option name="width" value="1227" />
     <option name="height" value="711" />
   </component>
@@ -231,7 +231,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Week3-Data-Driven-Testing" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="project.structure.last.edited" value="Project" />
@@ -474,7 +474,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="494" y="177" width="1227" height="711" extended-state="0" />
+    <frame x="661" y="190" width="1227" height="711" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -659,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/JenkinsUserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40869564" vertical-offset="190" max-vertical-offset="765">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.4678261" vertical-offset="190" max-vertical-offset="765">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>

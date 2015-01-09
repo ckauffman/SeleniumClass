@@ -27,27 +27,27 @@ public class ConfigureSystem {
     //Replace variables here
     private String runSkip;
     private String testScenario;
-    private String discardOldBuilds;
-    private String daysToKeepBuilds;
-    private String maxNumOfBuildsToKeep;
-    private String variable4;
-    private String variable5;
+    private String numOfExecutors;
+    private String restrictProjectNaming;
+    private String namingStrategy;
+    private String mavenDefaultSettings;
+    private String mavenFilePath;
 
     @Parameters
     public static Collection testData() throws Exception {
-        InputStream spreadsheet = new FileInputStream("C:\\SeleniumProjects\\Week3-Data-Driven-Testing\\Week3-DataDriven.xlsx");
+        InputStream spreadsheet = new FileInputStream("C:\\SeleniumProjects\\SeleniumClass\\Week3-Data-Driven-Testing\\Assignment3.xlsx");
         return new ReadSpreadsheetData(spreadsheet).getData();
     }
 
     //Modify constructor
-    public ConfigureSystem(String runSkip, String testScenario, String discardOldBuilds, String daysToKeepBuilds, String maxNumOfBuildsToKeep, String variable4, String variable5) {
+    public ConfigureSystem(String runSkip, String testScenario, String numOfExecutors, String restrictProjectNaming, String namingStrategy, String mavenDefaultSettings, String mavenFilePath) {
         this.runSkip = runSkip;
         this.testScenario = testScenario;
-        this.discardOldBuilds = discardOldBuilds;
-        this.daysToKeepBuilds = daysToKeepBuilds;
-        this.maxNumOfBuildsToKeep = maxNumOfBuildsToKeep;
-        this.variable4 = variable4;
-        this.variable5 = variable5;
+        this.numOfExecutors = numOfExecutors;
+        this.restrictProjectNaming = restrictProjectNaming;
+        this.namingStrategy = namingStrategy;
+        this.mavenDefaultSettings = mavenDefaultSettings;
+        this.mavenFilePath = mavenFilePath;
     }
 
     //Run this once
@@ -78,10 +78,10 @@ public class ConfigureSystem {
 
     private void setNamingStrategy(String namingStrategy){
         if(namingStrategy.equalsIgnoreCase("default")){
-            //Enter the radio button for clicking default
+            driver.findElement(By.id("radio-block-0")).click();
 
         } else if(namingStrategy.equalsIgnoreCase("pattern")){
-            //Enter the radio button for clicking pattern
+            driver.findElement(By.id("radio-block-1")).click();
 
         } else if(namingStrategy.equalsIgnoreCase("")){
             //do nothing
@@ -97,7 +97,23 @@ public class ConfigureSystem {
             //Set the initial state
             driver.get("http://localhost:8080");
 
-            //Copy in code here
+            driver.findElement(By.linkText("Manage Jenkins")).click();
+            driver.findElement(By.linkText("Configure System")).click();
+            if(!numOfExecutors.equals("")) {
+                driver.findElement(By.name("_.numExecutors")).clear();
+                driver.findElement(By.name("_.numExecutors")).sendKeys(numOfExecutors);
+            }
+            setCheckbox("cb4", restrictProjectNaming);
+            //driver.findElement(By.id("cb4")).click();
+            setNamingStrategy(namingStrategy);
+
+            new Select(driver.findElement(By.cssSelector("select.setting-input.dropdownList"))).selectByVisibleText(mavenDefaultSettings);
+
+            if(! mavenFilePath.equalsIgnoreCase("")) {
+                driver.findElement(By.name("_.path")).clear();
+                driver.findElement(By.name("_.path")).sendKeys(mavenFilePath);
+            }
+            driver.findElement(By.id("yui-gen10-button")).click();
 
         }
 
