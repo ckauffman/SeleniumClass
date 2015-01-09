@@ -50,13 +50,27 @@ public class JenkinsProject {
         } catch (Exception e){
             Reporting reporting = new Reporting();
             String errorFile = reporting.takeScreenshot(driver);
-            fail("Unable to find project " + projectName + ", screenshot at " + errorFile + " full error details: " + e.toString());
+            fail("Unable to find project " + projectName + ", screenshot at " + errorFile + " full error details: "
+                    + e.toString());
         }
 
     }
 
     public void buildProject(String projectName){
-        //Add code from BuildNow here
+        editProject();
+        driver.findElement(By.linkText("Build Now")).click();
+        driver.findElement(By.id("jenkins-name-icon")).click();
+        driver.findElement(By.linkText("Build History")).click();
+        try {
+            driver.findElement(By.linkText(projectName)).click();
+        } catch(Exception e) {
+            Reporting reporting = new Reporting();
+            String errorFile = reporting.takeScreenshot(driver);
+            fail("Unable to find project: " + projectName + " in build history.  Screenshot at: " + errorFile
+                    + " full error details: " + e.toString());
+        }
+        assertEquals("Project " + projectName, driver.findElement(By.cssSelector("h1.job-index-headline.page-headline")).getText());
+
 
     }
 

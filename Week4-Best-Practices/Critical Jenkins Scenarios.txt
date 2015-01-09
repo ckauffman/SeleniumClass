@@ -1,11 +1,21 @@
 Top 10 Scenarios for Jenkins
+
 1. Add in a new project.   Reason: If a new project can not be created Jenkins can't be used.
-2. 
-3.
-4.
-5. 
-6.
-7. 
-8.
-9.
-10.
+
+2. Build a project.  Reason: This is a core functionality of Jenkins.  If a project can't be built Jenkins is unusable.
+
+3. Add a new user.  Reason: Jenkins should have access control.  You can't have access control if you cannot create a user
+
+4. Edit system configuration.  Reason:  System configuration contains settings that can affect all projects within Jenkins
+
+5. Manage nodes.  Reason: The nodes are used to execute builds in Jenkins.  Managing and configuring nodes is necessary for build execution.
+
+6. Configure Global Security.  Reason: An unsecured Jenkins system could be a security risk.
+
+7. View and executed build.  Reason: Key functionality of Jenkins.  When a build runs a user will want a status and artifacts related to the build.
+
+8. Edit a project.  Reason: Builds will periodically need to be updated in Jenkins.
+
+9. Set a project to execute based on schedule.  Reason: This is a common function of Jenkins and its value would be greatly dimished without this feature.
+
+10. Add a build step.  Reason: without being able to add steps projects wouldn't do anything when built.
