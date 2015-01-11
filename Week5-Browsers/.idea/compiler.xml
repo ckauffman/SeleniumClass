@@ -22,7 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="Week4-Best-Practices" />
+        <module name="Week5" />
       </profile>
     </annotationProcessing>
   </component>
