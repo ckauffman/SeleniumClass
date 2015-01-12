@@ -34,8 +34,8 @@ public class TestBrowsers {
 
     @Test
     public void testBrowsers() {
-       // testProjectLink("IE");
-        testProjectLink("Chrome");
+       testProjectLink("IE");
+       // testProjectLink("Chrome");
 
 //        startBrowser("Chrome");
 //        driver.findElement(By.linkText("First Project")).click();
