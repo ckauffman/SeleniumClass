@@ -30,7 +30,7 @@ public class ExcelDataDriven {
 
     @Parameters
     public static Collection testData() throws Exception {
-        InputStream spreadsheet = new FileInputStream("C:\\SeleniumProjects\\Week3-Data-Driven-Testing\\Week3-DataDriven.xlsx");
+        InputStream spreadsheet = new FileInputStream("C:\\SeleniumProjects\\SeleniumClass\\Week3-Data-Driven-Testing\\Week3-DataDriven.xlsx");
         return new ReadSpreadsheetData(spreadsheet).getData();
     }
 

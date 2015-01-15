@@ -35,7 +35,11 @@ public class ConfigureSystem {
 
     @Parameters
     public static Collection testData() throws Exception {
+<<<<<<< HEAD
         InputStream spreadsheet = new FileInputStream("C:\\SeleniumProjects\\SeleniumClass\\Week3-Data-Driven-Testing\\Assignment3.xlsx");
+=======
+        InputStream spreadsheet = new FileInputStream("C:\\SeleniumProjects\\SeleniumClass\\Week3-Data-Driven-Testing\\Week3-DataDriven.xlsx");
+>>>>>>> master
         return new ReadSpreadsheetData(spreadsheet).getData();
     }
 
