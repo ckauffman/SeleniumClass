@@ -17,7 +17,27 @@ public class TestAddProjects {
 
         //Get the correct browser based on what is passed in 
         RunBrowser runBrowser = new RunBrowser(browserVersion);
-        //Add in code from AddProject here
+        runBrowser.driver.get(baseUrl + "/");
+        try {
+            Thread.sleep(1000);
+        } catch(InterruptedException e) {
+            System.out.println("Failed to wait: " + e.toString());
+        }
+        runBrowser.driver.findElement(By.linkText("New Item")).click();
+        runBrowser.driver.findElement(By.id("name")).clear();
+        runBrowser.driver.findElement(By.id("name")).sendKeys(projectName);
+        runBrowser.driver.findElement(By.name("mode")).click();
+        runBrowser.driver.findElement(By.id("ok-button")).click();
+        // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
+        new Select(runBrowser.driver.findElement(By.name("_.compressionLevel"))).selectByVisibleText("System Default");
+        runBrowser.driver.findElement(By.xpath("//text()[normalize-space(.)='CVS Projectset']/../input")).click();
+        runBrowser.driver.findElement(By.xpath("//text()[normalize-space(.)='This Connection Requires A Password']/../../input")).click();
+        runBrowser.driver.findElement(By.name("_.password")).clear();
+        runBrowser.driver.findElement(By.name("_.password")).sendKeys("test");
+        runBrowser.driver.findElement(By.xpath("//text()[normalize-space(.)='None']/../input")).click();
+        runBrowser.driver.findElement(By.xpath("//*[@name='Apply']")).click();
+        runBrowser.driver.findElement(By.xpath("//*[@name='Submit']")).click();
+        assertEquals(projectName, runBrowser.driver.findElement(By.cssSelector("h1.job-index-headline.page-headline")).getText());
 
         //Close the browser
         runBrowser.driver.quit();
@@ -25,7 +45,7 @@ public class TestAddProjects {
 
     @Test
     public void testAddProject() {
-        addProjectByBrowser("IE");
+        //addProjectByBrowser("IE");
         addProjectByBrowser("Chrome");
 
     }

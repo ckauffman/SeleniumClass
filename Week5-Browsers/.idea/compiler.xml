@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Week5" />
+        <module name="Week5-Browsers" />
       </profile>
     </annotationProcessing>
   </component>
