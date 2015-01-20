@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Week6-Grid-And-Jenkins" />
+        <module name="Week6b-Grid-And-Jenkins" />
       </profile>
     </annotationProcessing>
   </component>

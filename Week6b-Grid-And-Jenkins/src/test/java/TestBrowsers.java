@@ -20,7 +20,6 @@ public class TestBrowsers {
         //runBrowser.driver.findElement(By.id("yui-gen30-button")).click();
         runBrowser.driver.quit();
 
-
     }
 
     @Test
