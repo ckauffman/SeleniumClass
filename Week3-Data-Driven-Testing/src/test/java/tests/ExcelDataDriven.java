@@ -8,6 +8,7 @@ import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized.Parameters;
 import org.junit.runners.Parameterized;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static org.junit.Assert.*;
@@ -27,6 +28,7 @@ public class ExcelDataDriven {
     private String discardOldBuilds;
     private String daysToKeepBuilds;
     private String maxNumOfBuildsToKeep;
+    private String sourceCodeManagement;
 
     @Parameters
     public static Collection testData() throws Exception {
@@ -35,12 +37,13 @@ public class ExcelDataDriven {
     }
 
     //Constructor to populate data
-    public ExcelDataDriven(String runSkip, String testScenario, String discardOldBuilds, String daysToKeepBuilds, String maxNumOfBuildsToKeep) {
+    public ExcelDataDriven(String runSkip, String testScenario, String discardOldBuilds, String daysToKeepBuilds, String maxNumOfBuildsToKeep, String sourceCodeManagement) {
         this.testScenario = testScenario;
         this.discardOldBuilds = discardOldBuilds;
         this.daysToKeepBuilds = daysToKeepBuilds;
         this.maxNumOfBuildsToKeep = maxNumOfBuildsToKeep;
         this.runSkip = runSkip;
+        this.sourceCodeManagement = sourceCodeManagement;
     }
 
     //Run this once
@@ -48,33 +51,77 @@ public class ExcelDataDriven {
     public static void setUp() throws Exception {
         // Create a new instance of the Firefox driver
         driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
+    }
+
+
+    private void setCheckbox(String checkboxName, String valueToSet) {
+        if (!valueToSet.equalsIgnoreCase("")) {
+            //driver.findElement(By.id("cb7")).click();
+
+            WebElement checkbox = driver.findElement(By.id(checkboxName));
+            boolean checkboxChecked = false;
+            //Determine the current state of the checkbox
+            if (checkbox.getAttribute("checked") == null) {
+                checkboxChecked = false;
+            } else if (checkbox.getAttribute("checked").equalsIgnoreCase("true")) {
+                checkboxChecked = true;
+            } else {
+                checkboxChecked = false;
+            }
+
+            if (checkboxChecked && valueToSet.equalsIgnoreCase("uncheck")) {
+                //It should be unchecked, uncheck it
+                checkbox.click();
+            } else if (!checkboxChecked && valueToSet.equalsIgnoreCase("check")) {
+                //value is unchecked, if it should be checked, click it
+                checkbox.click();
+            }
+        }
+    }
+
+
+    private void setSourceCodeManagement(String sourceCodeManagement) {
+        if (sourceCodeManagement.equalsIgnoreCase("None")) {
+            driver.findElement(By.id("radio-block-0")).click();
+        } else if (sourceCodeManagement.equalsIgnoreCase("CVS")) {
+            driver.findElement(By.id("radio-block-1")).click();
+        } else if (sourceCodeManagement.equalsIgnoreCase("")) {
+            //do nothing
+        } else {
+            fail("Unknown Source Code Management: " + sourceCodeManagement);
+        }
     }
 
     @Test
     public void testDiscardOldBuilds() throws Exception {
-        if(runSkip.equalsIgnoreCase("x")){
+        if (runSkip.equalsIgnoreCase("x")) {
             //Set the initial state
             driver.get("http://localhost:8080");
             driver.findElement(By.linkText("New Item")).click();
             driver.findElement(By.id("name")).clear();
-            String projectName = testScenario  + " " + RandomStringUtils.randomAlphabetic(5);
+            String projectName = testScenario + " " + RandomStringUtils.randomAlphabetic(5);
             driver.findElement(By.id("name")).sendKeys(projectName);
             driver.findElement(By.name("mode")).click();
             driver.findElement(By.id("ok-button")).click();
-            if(discardOldBuilds.equalsIgnoreCase("check")) {
-                driver.findElement(By.id("cb6")).click();
-                if(!daysToKeepBuilds.equals("")) {
+
+            setCheckbox("cb7", discardOldBuilds);
+            if (discardOldBuilds.equalsIgnoreCase("check")) {
+                if (!daysToKeepBuilds.equals("")) {
                     driver.findElement(By.name("_.daysToKeepStr")).clear();
                     driver.findElement(By.name("_.daysToKeepStr")).sendKeys(daysToKeepBuilds);
                 }
-                if(!maxNumOfBuildsToKeep.equals("")) {
+                if (!maxNumOfBuildsToKeep.equals("")) {
                     driver.findElement(By.name("_.numToKeepStr")).clear();
                     driver.findElement(By.name("_.numToKeepStr")).sendKeys(maxNumOfBuildsToKeep);
                 }
             }
-            driver.findElement(By.id("yui-gen30-button")).click();
+            setSourceCodeManagement(sourceCodeManagement);
+
+            driver.findElement(By.id("radio-block-0")).click();
+
+            driver.findElement(By.id("yui-gen38-button")).click();
 
             assertEquals(projectName + " [Jenkins]", driver.getTitle());
         }

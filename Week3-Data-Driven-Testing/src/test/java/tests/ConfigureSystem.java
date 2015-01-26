@@ -59,22 +59,31 @@ public class ConfigureSystem {
 
     }
 
-    private void setCheckbox(String checkboxName, String valueToSet){
-        if(!valueToSet.equalsIgnoreCase("")) {
+    private void setCheckbox(String checkboxName, String valueToSet) {
+        if (!valueToSet.equalsIgnoreCase("")) {
+            //driver.findElement(By.id("cb7")).click();
+
             WebElement checkbox = driver.findElement(By.id(checkboxName));
-            if (checkbox.getAttribute("checked").equalsIgnoreCase("true")) {
-                //value is already checked, if it should be unchecked, click it
-                if (valueToSet.equalsIgnoreCase("uncheck")) {
-                    checkbox.click();
-                }
+            boolean checkboxChecked = false;
+            //Determine the current state of the checkbox
+            if (checkbox.getAttribute("checked") == null) {
+                checkboxChecked = false;
+            } else if (checkbox.getAttribute("checked").equalsIgnoreCase("true")) {
+                checkboxChecked = true;
             } else {
+                checkboxChecked = false;
+            }
+
+            if (checkboxChecked && valueToSet.equalsIgnoreCase("uncheck")) {
+                //It should be unchecked, uncheck it
+                checkbox.click();
+            } else if (!checkboxChecked && valueToSet.equalsIgnoreCase("check")) {
                 //value is unchecked, if it should be checked, click it
-                if (valueToSet.equalsIgnoreCase("check")) {
-                    checkbox.click();
-                }
+                checkbox.click();
             }
         }
     }
+
 
     private void setNamingStrategy(String namingStrategy){
         if(namingStrategy.equalsIgnoreCase("default")){
