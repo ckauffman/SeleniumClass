@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pageObjectModel.JenkinsUser;
 
 import java.util.concurrent.TimeUnit;
 
@@ -31,12 +32,20 @@ public class JenkinsUserTest {
         driver.get(baseUrl + "/");
         //add in code to create the JenkinsUser object
 
+        JenkinsUser user = new JenkinsUser(driver);
+
         //add in code to Add a user
+        String baseuser = "baseuser";
+        user.adduser(baseuser);
 
         //add in code to Edit a user
 
+        String password = "foo";
+        user.editUser(baseuser, password);
+
         //add in code to Delete a user
 
+        user.deleteUser(baseuser);
     }
 
     @After
