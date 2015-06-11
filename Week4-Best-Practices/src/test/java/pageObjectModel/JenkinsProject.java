@@ -57,6 +57,19 @@ public class JenkinsProject {
 
     public void buildProject(String projectName){
         //Add code from BuildNow here
+        driver.get(baseUrl + "/");
+        editProject();
+        driver.findElement(By.linkText("Build Now")).click();
+        driver.findElement(By.linkText("Jenkins")).click();
+        driver.findElement(By.linkText("Build History")).click();
+        try{
+            driver.findElement(By.linkText(projectName)).click();
+        } catch (Exception e){
+            Reporting reporting = new Reporting();
+            String errorFile = reporting.takeScreenshot(driver);
+            fail("Unable to find build in build history " + projectName + ", screenshot at " + errorFile + " full error details: " + e.toString());
+        }
+        assertEquals("Project "+projectName, driver.findElement(By.cssSelector("h1.job-index-headline.page-headline")).getText());
 
     }
 

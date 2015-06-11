@@ -1,11 +1,11 @@
 Top 10 Scenarios for Jenkins
 1. Add in a new project.   Reason: If a new project can not be created Jenkins can't be used.
-2. 
-3.
-4.
-5. 
-6.
-7. 
-8.
-9.
-10.
+2. Add Domain		   Reason: Feature is needed to add users and manage their access level.
+3. Update Domain	   Reason: Need to be able to make changes to domains as system requirements change.
+4. Add Credentials	   Reason: New users will not be able to use Jenkins if new users cannot be added to Jenkins.
+5. Update Credentials	   Reason: For security reasons, users will need to be able to update passwords.	
+6. Configure Global Security Reason: The system could be vulnerable to malicious access if security settings cannot be set.
+7. Build Now		   Reason: Projects will not be able to be built if this isn't working.
+8. Disable Project	   Reason: Feature prevents Jenkins from building a project.	
+9. Configure System	   Reason: Users need to be able to customize Jenkins to meet their requirements.
+10.Prepare for shutdon	   Reason: Jenkins may need to be shutdown, this allows it to be done safely.

@@ -25,5 +25,8 @@
         <module name="Week4-Best-Practices" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Week4-Best-Practices" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
