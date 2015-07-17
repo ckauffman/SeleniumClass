@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class EditUser {
+public class EditUser2 {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -23,9 +23,8 @@ public class EditUser {
   }
 
   @Test
-  public void testEditUser() throws Exception {
-    driver.get("http://localhost:8080/");
-    driver.findElement(By.linkText("Jenkins")).click();
+  public void testEditUser2() throws Exception {
+    driver.get("http://localhost:8080");
     driver.findElement(By.linkText("Credentials")).click();
     for (int second = 0;; second++) {
     	if (second >= 60) fail("timeout");
@@ -34,7 +33,13 @@ public class EditUser {
     }
 
     driver.findElement(By.linkText("Global credentials")).click();
-    driver.findElement(By.linkText("test3/****** (update)")).click();
+    for (int second = 0;; second++) {
+    	if (second >= 60) fail("timeout");
+    	try { if (isElementPresent(By.linkText("test2/******(update)"))) break; } catch (Exception e) {}
+    	Thread.sleep(1000);
+    }
+
+    driver.findElement(By.linkText("test2/******(update)")).click();
     for (int second = 0;; second++) {
     	if (second >= 60) fail("timeout");
     	try { if (isElementPresent(By.linkText("Update"))) break; } catch (Exception e) {}
@@ -42,13 +47,19 @@ public class EditUser {
     }
 
     driver.findElement(By.linkText("Update")).click();
-    driver.findElement(By.name("_.password")).clear();
-    driver.findElement(By.name("_.password")).sendKeys("newpassword");
+    driver.findElement(By.cssSelector("input[name=\"_.password\"]")).clear();
+    driver.findElement(By.cssSelector("input[name=\"_.password\"]")).sendKeys("newpassword");
     driver.findElement(By.name("_.description")).clear();
     driver.findElement(By.name("_.description")).sendKeys("update");
-    driver.findElement(By.id("yui-gen1-button")).click();
-    /*driver.findElement(By.linkText("Back to Global credentials")).click();
-    assertEquals("update", driver.findElement(By.xpath("//div[@id='main-panel-content']/table/tbody/tr[4]/td[4]")).getText()); */
+    driver.findElement(By.xpath("//button[contains(text(),\"Save\")]")).click();
+    driver.findElement(By.linkText("Back to Global credentials")).click();
+    for (int second = 0;; second++) {
+    	if (second >= 60) fail("timeout");
+    	try { if (isElementPresent(By.xpath("//div[@id='main-panel-content']/table[1]/tbody/tr[3]/td[4]"))) break; } catch (Exception e) {}
+    	Thread.sleep(1000);
+    }
+
+    assertEquals("update", driver.findElement(By.xpath("//div[@id='main-panel-content']//table[1]//tbody//tr[3]//td[4]")).getText());
   }
 
   @After
