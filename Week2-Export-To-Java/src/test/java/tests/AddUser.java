@@ -21,6 +21,8 @@ public class AddUser {
 
   @Test
   public void testAddUser() throws Exception {
+    driver.get("http://localhost:8080/");
+
     JenkinsUser user = new JenkinsUser(driver);
     user.addUser("test3");
   }
