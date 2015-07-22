@@ -27,7 +27,6 @@ public class JUnitDataDriven {
     private String daysToKeepBuilds;
     private String maxNumOfBuildsToKeep;
 
-
     @Parameters
     public static Collection testData() {
         return Arrays.asList(
@@ -54,7 +53,6 @@ public class JUnitDataDriven {
         // Create a new instance of the Firefox driver
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
     }
 
     @Test
@@ -67,6 +65,7 @@ public class JUnitDataDriven {
         driver.findElement(By.id("name")).sendKeys(projectName);
         driver.findElement(By.name("mode")).click();
         driver.findElement(By.id("ok-button")).click();
+
         if(discardOldBuilds.equalsIgnoreCase("check")) {
             driver.findElement(By.id("cb6")).click();
             driver.findElement(By.name("_.daysToKeepStr")).clear();
@@ -74,6 +73,7 @@ public class JUnitDataDriven {
             driver.findElement(By.name("_.numToKeepStr")).clear();
             driver.findElement(By.name("_.numToKeepStr")).sendKeys(maxNumOfBuildsToKeep);
         }
+
         driver.findElement(By.id("yui-gen30-button")).click();
 
         assertEquals(projectName + " [Jenkins]", driver.getTitle());
@@ -85,6 +85,5 @@ public class JUnitDataDriven {
     public static void tearDown() throws Exception {
         //Close the browser
         driver.quit();
-
     }
 }

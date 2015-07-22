@@ -13,6 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static org.junit.Assert.*;
 
+import java.lang.String;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Collection;
@@ -32,7 +33,7 @@ public class ExcelDataDriven {
 
     @Parameters
     public static Collection testData() throws Exception {
-        InputStream spreadsheet = new FileInputStream("C:\\SeleniumProjects\\SeleniumClass\\Week3-Data-Driven-Testing\\Week3-DataDriven.xlsx");
+        InputStream spreadsheet = new FileInputStream("C:\\Users\\cdorsey\\Documents\\workspace\\seleniumclass\\Week3-Data-Driven-Testing\\Week3-DataDriven.xlsx");
         return new ReadSpreadsheetData(spreadsheet).getData();
     }
 
@@ -62,6 +63,7 @@ public class ExcelDataDriven {
 
             WebElement checkbox = driver.findElement(By.id(checkboxName));
             boolean checkboxChecked = false;
+
             //Determine the current state of the checkbox
             if (checkbox.getAttribute("checked") == null) {
                 checkboxChecked = false;
@@ -97,6 +99,7 @@ public class ExcelDataDriven {
     @Test
     public void testDiscardOldBuilds() throws Exception {
         if (runSkip.equalsIgnoreCase("x")) {
+
             //Set the initial state
             driver.get("http://localhost:8080");
             driver.findElement(By.linkText("New Item")).click();
@@ -106,7 +109,8 @@ public class ExcelDataDriven {
             driver.findElement(By.name("mode")).click();
             driver.findElement(By.id("ok-button")).click();
 
-            setCheckbox("cb7", discardOldBuilds);
+            setCheckbox("cb6", discardOldBuilds); // Jenkins version discrepancy. use cb6 instead of cb7
+
             if (discardOldBuilds.equalsIgnoreCase("check")) {
                 if (!daysToKeepBuilds.equals("")) {
                     driver.findElement(By.name("_.daysToKeepStr")).clear();
@@ -117,11 +121,11 @@ public class ExcelDataDriven {
                     driver.findElement(By.name("_.numToKeepStr")).sendKeys(maxNumOfBuildsToKeep);
                 }
             }
+
             setSourceCodeManagement(sourceCodeManagement);
 
             driver.findElement(By.id("radio-block-0")).click();
-
-            driver.findElement(By.id("yui-gen38-button")).click();
+            driver.findElement(By.id("yui-gen30-button")).click(); // Jenkins version discrepancy. use yui-gen30-button instead of yui-gen38-button
 
             assertEquals(projectName + " [Jenkins]", driver.getTitle());
         }
@@ -133,6 +137,5 @@ public class ExcelDataDriven {
     public static void tearDown() throws Exception {
         //Close the browser
         driver.quit();
-
     }
 }

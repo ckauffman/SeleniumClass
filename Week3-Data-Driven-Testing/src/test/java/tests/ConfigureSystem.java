@@ -61,10 +61,10 @@ public class ConfigureSystem {
 
     private void setCheckbox(String checkboxName, String valueToSet) {
         if (!valueToSet.equalsIgnoreCase("")) {
-            //driver.findElement(By.id("cb7")).click();
 
             WebElement checkbox = driver.findElement(By.id(checkboxName));
             boolean checkboxChecked = false;
+
             //Determine the current state of the checkbox
             if (checkbox.getAttribute("checked") == null) {
                 checkboxChecked = false;
