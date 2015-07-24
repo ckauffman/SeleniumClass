@@ -3,7 +3,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 
 public class TestBrowsers {
-    private boolean runToGrid = true;
+    private boolean runToGrid = false;
+
     public void testProjectByBrowser(String driverType) {
         RunBrowser runBrowser = new RunBrowser(driverType, runToGrid);
         runBrowser.driver.get("http://localhost:8080");
@@ -16,14 +17,13 @@ public class TestBrowsers {
         runBrowser.driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
         //runBrowser.driver.findElement(By.id("yui-gen30-button")).click();
         runBrowser.driver.quit();
-
     }
 
     @Test
     public void testProjectByFirefox() throws Exception {
         testProjectByBrowser("Firefox");
-
     }
+
     @Test
     public void testProjectByIE() throws Exception {
         testProjectByBrowser("IE");

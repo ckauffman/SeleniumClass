@@ -54,7 +54,7 @@ public class JenkinsProjectTest {
     public void tearDown() throws Exception {
         driver.quit();
         String verificationErrorString = verificationErrors.toString();
-        
+
         if (!"".equals(verificationErrorString)) {
             fail(verificationErrorString);
         }
