@@ -3,16 +3,13 @@ package tests;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
-
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized.Parameters;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import static org.junit.Assert.*;
-
 import java.lang.String;
 import java.io.FileInputStream;
 import java.io.InputStream;

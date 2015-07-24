@@ -15,13 +15,12 @@ import static org.junit.Assert.fail;
  */
 public class Reporting {
     public String takeScreenshot(WebDriver driver){
-        String errorFileName = "c:\\SeleniumProjects\\" + RandomStringUtils.randomAlphabetic(5) + ".png";
+        String errorFileName = "C:\\Users\\cdorsey\\Documents\\workspace\\seleniumclass\\Week4-Best-Practices" + RandomStringUtils.randomAlphabetic(5) + ".png";
         try {
             File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(scrFile, new File(errorFileName));
         } catch (Exception e){
             fail(e.toString());
-
         }
         return errorFileName;
     }

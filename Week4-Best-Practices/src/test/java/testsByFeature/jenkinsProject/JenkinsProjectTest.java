@@ -29,15 +29,16 @@ public class JenkinsProjectTest {
         JenkinsProject jenkinsProject = new JenkinsProject(driver);
         jenkinsProject.addProject("Project 1");
         jenkinsProject.buildProject(jenkinsProject.projectName);
-
     }
 
     @Test
     public void testProjectBuildFail() throws Exception {
         boolean failOccur = false;
         driver.get("http://localhost:8080/");
+
         JenkinsProject jenkinsProject = new JenkinsProject(driver);
         jenkinsProject.addProject("Project Fail");
+
         try {
             jenkinsProject.buildProject("Build Fail");
         } catch (AssertionError e){
@@ -47,14 +48,13 @@ public class JenkinsProjectTest {
         if(failOccur == false){
             fail("Did not cause the fail of the project");
         }
-        //jenkinsProject.deleteProject();
-
     }
 
     @After
     public void tearDown() throws Exception {
         driver.quit();
         String verificationErrorString = verificationErrors.toString();
+        
         if (!"".equals(verificationErrorString)) {
             fail(verificationErrorString);
         }
