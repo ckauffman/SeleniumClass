@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class BuildNow {
+public class BuildNow1 {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -23,8 +23,9 @@ public class BuildNow {
   }
 
   @Test
-  public void testBuildNow() throws Exception {
-    driver.get(baseUrl + "/");
+  public void testBuildNow1() throws Exception {
+    driver.get(baseUrl + "/job/First%20Project/");
+    driver.findElement(By.linkText("Jenkins")).click();
     driver.findElement(By.linkText("First Project")).click();
     driver.findElement(By.linkText("Build Now")).click();
     driver.findElement(By.linkText("Jenkins")).click();
