@@ -22,7 +22,7 @@ public class RunBrowser {
 
         if (driverType.equalsIgnoreCase("IE")) {
             //System.setProperty("webdriver.ie.driver", workingDir + "\\drivers\\IEDriverServer.exe");
-            System.setProperty("webdriver.ie.driver", workingDir);
+            System.setProperty("webdriver.ie.driver", workingDir + "IEDriverServer.exe");
             //Disable Internet Explorer security errors for IE 9-10
             desiredCapabilities = DesiredCapabilities.internetExplorer();
             desiredCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
@@ -31,7 +31,7 @@ public class RunBrowser {
             }
         } else if (driverType.equalsIgnoreCase("Chrome")) {
             if (!runToGrid) {
-                System.setProperty("webdriver.chrome.driver", workingDir);
+                System.setProperty("webdriver.chrome.driver", workingDir + "chromedriver.exe");
                 driver = new ChromeDriver();
             } else {
                 desiredCapabilities = DesiredCapabilities.chrome();
