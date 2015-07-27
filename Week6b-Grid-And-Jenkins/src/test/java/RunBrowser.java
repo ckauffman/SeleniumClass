@@ -14,7 +14,7 @@ import static com.thoughtworks.selenium.SeleneseTestBase.fail;
 
 public class RunBrowser {
     WebDriver driver;
-    String workingDir = "C:\\Users\\cdorsey\\Documents\\workspace\\seleniumclass\\Week6b-Grid-And-Jenkins\\drivers";
+    String workingDir = "C:\\Users\\cdorsey\\Documents\\workspace\\seleniumclass\\Week6b-Grid-And-Jenkins\\drivers\\";
     //String workingDir = System.getProperty("user.dir");
 
     public RunBrowser(String driverType, boolean runToGrid) {
