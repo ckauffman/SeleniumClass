@@ -14,15 +14,15 @@ import static com.thoughtworks.selenium.SeleneseTestBase.fail;
 
 public class RunBrowser {
     WebDriver driver;
-    String workingDir = "C:\\Users\\cdorsey\\Documents\\workspace\\seleniumclass\\Week6b-Grid-And-Jenkins\\drivers\\";
-    //String workingDir = System.getProperty("user.dir");
+    //String workingDir = "C:\\Users\\cdorsey\\Documents\\workspace\\seleniumclass\\Week6b-Grid-And-Jenkins\\drivers\\";
+    String workingDir = System.getProperty("user.dir");
 
     public RunBrowser(String driverType, boolean runToGrid) {
         DesiredCapabilities desiredCapabilities = null;
 
         if (driverType.equalsIgnoreCase("IE")) {
-            //System.setProperty("webdriver.ie.driver", workingDir + "\\drivers\\IEDriverServer.exe");
-            System.setProperty("webdriver.ie.driver", workingDir + "IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", workingDir + "\\drivers\\IEDriverServer.exe");
+            //System.setProperty("webdriver.ie.driver", workingDir + "IEDriverServer.exe");
             //Disable Internet Explorer security errors for IE 9-10
             desiredCapabilities = DesiredCapabilities.internetExplorer();
             desiredCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
@@ -31,7 +31,7 @@ public class RunBrowser {
             }
         } else if (driverType.equalsIgnoreCase("Chrome")) {
             if (!runToGrid) {
-                System.setProperty("webdriver.chrome.driver", workingDir + "chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", workingDir + "\\drivers\\chromedriver.exe");
                 driver = new ChromeDriver();
             } else {
                 desiredCapabilities = DesiredCapabilities.chrome();
