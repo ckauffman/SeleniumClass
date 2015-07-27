@@ -27,12 +27,12 @@ public class AddProject {
     driver.get(baseUrl + "/");
     driver.findElement(By.linkText("New Item")).click();
     driver.findElement(By.id("name")).clear();
-    driver.findElement(By.id("name")).sendKeys("A selenium test");
+    driver.findElement(By.id("name")).sendKeys("First Project");
     driver.findElement(By.name("mode")).click();
     driver.findElement(By.id("ok-button")).click();
     new Select(driver.findElement(By.name("_.compressionLevel"))).selectByVisibleText("System Default");
     // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
-    driver.findElement(By.id("yui-gen38-button")).click();
+    driver.findElement(By.id("yui-gen30-button")).click();
   }
 
   @After
