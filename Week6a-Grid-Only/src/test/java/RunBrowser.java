@@ -44,7 +44,14 @@ public class RunBrowser {
             }
         }
 
-        //Add in code to run on the grid here
+        if(runToGrid) {
+            try {
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities);
+
+            } catch (MalformedURLException e) {
+                fail("Error building URL to Hub");
+            }
+        }
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
