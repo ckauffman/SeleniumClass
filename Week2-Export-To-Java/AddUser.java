@@ -34,7 +34,7 @@ public class AddUser {
     // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
     new Select(driver.findElement(By.cssSelector("select.setting-input.dropdownList"))).selectByVisibleText("Username with password");
     driver.findElement(By.name("_.username")).clear();
-    driver.findElement(By.name("_.username")).sendKeys("test3");
+    driver.findElement(By.name("_.username")).sendKeys("Test4");
     driver.findElement(By.name("_.password")).clear();
     driver.findElement(By.name("_.password")).sendKeys("password");
     driver.findElement(By.id("yui-gen1-button")).click();

@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class AddUser {
+public class DeleteUser {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -23,21 +23,13 @@ public class AddUser {
   }
 
   @Test
-  public void testAddUser() throws Exception {
+  public void testDeleteUser() throws Exception {
     driver.get(baseUrl + "/");
     driver.findElement(By.linkText("Jenkins")).click();
     driver.findElement(By.linkText("Credentials")).click();
     driver.findElement(By.linkText("Global credentials")).click();
-    driver.findElement(By.linkText("Add Credentials")).click();
-    new Select(driver.findElement(By.name("_.scope"))).selectByVisibleText("Global");
-    new Select(driver.findElement(By.cssSelector("select.setting-input.dropdownList"))).selectByVisibleText("SSH Username with private key");
-    // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
-    new Select(driver.findElement(By.cssSelector("select.setting-input.dropdownList"))).selectByVisibleText("Username with password");
-    driver.findElement(By.name("_.username")).clear();
-    driver.findElement(By.name("_.username")).sendKeys("test3");
-    driver.findElement(By.name("_.password")).clear();
-    driver.findElement(By.name("_.password")).sendKeys("password");
-    driver.findElement(By.id("yui-gen1-button")).click();
+    driver.findElement(By.linkText("test3/****** (update)")).click();
+    driver.findElement(By.linkText("Delete")).click();
   }
 
   @After
