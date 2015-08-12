@@ -61,7 +61,7 @@ public class ConfigureSystem {
 
     private void setCheckbox(String checkboxName, String valueToSet) {
         if (!valueToSet.equalsIgnoreCase("")) {
-            //driver.findElement(By.id("cb7")).click();
+            //driver.findElement(By.id("cb4")).click();
 
             WebElement checkbox = driver.findElement(By.id(checkboxName));
             boolean checkboxChecked = false;
@@ -104,7 +104,7 @@ public class ConfigureSystem {
 
     @Test
     public void testConfigureSystem() throws Exception {
-        if(runSkip.equalsIgnoreCase("x")){
+        if (runSkip.equalsIgnoreCase("x")) {
             //Set the initial state
             driver.get("http://localhost:8080");
 
@@ -112,10 +112,13 @@ public class ConfigureSystem {
             driver.findElement(By.linkText("Jenkins")).click();
             driver.findElement(By.linkText("Manage Jenkins")).click();
             driver.findElement(By.linkText("Configure System")).click();
-            if (!numOfExecutors.equals("")){
+            if (!numOfExecutors.equals("")) {
                 driver.findElement(By.name("_.numExecutors")).clear();
                 driver.findElement(By.name("_.numExecutors")).sendKeys(numOfExecutors);
             }
+
+            }
+
             //driver.findElement(By.id("cb4")).click();
             setCheckbox("cb4", restrictProjectNaming);
             setNamingStrategy(namingStrategy);
@@ -128,13 +131,14 @@ public class ConfigureSystem {
 
         }
 
-    }
 
-    //Clean up at the end
-    @AfterClass
-    public static void tearDown() throws Exception {
-        //Close the browser
-        driver.quit();
+        //Clean up at the end
+        @AfterClass
+        public static void tearDown ()throws Exception {
+            //Close the browser
+            driver.quit();
+
+        }
+
 
     }
-}

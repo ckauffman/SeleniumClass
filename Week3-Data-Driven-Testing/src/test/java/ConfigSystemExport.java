@@ -33,6 +33,8 @@ public class ConfigSystemExport {
     driver.findElement(By.id("cb4")).click();
     driver.findElement(By.id("radio-block-1")).click();
     driver.findElement(By.id("radio-block-0")).click();
+    new Select(driver.findElement(By.cssSelector("select.setting-input.dropdownList"))).selectByVisibleText("Use default maven settings");
+    driver.findElement(By.cssSelector("option[value=\"0\"]")).click();
     new Select(driver.findElement(By.cssSelector("select.setting-input.dropdownList"))).selectByVisibleText("Settings file in filesystem");
     driver.findElement(By.name("_.path")).clear();
     driver.findElement(By.name("_.path")).sendKeys("c:\\test");
