@@ -1,0 +1,11 @@
+Scenarios				Why they are important
+ 1.Create New Item/Project		Projects are necessary for Jenkins to do what it was intended to do.	
+ 2.Update Existing Project		Project info changes and needs to be updated
+ 3.Create New Domain			Domain is needed to manage users
+ 4.Update Domain			Domain needs may change as project grows
+ 5.Add New Credetials			Need to be able to add users to the project
+ 6.Edit Existing Credentials		Users can get married/divorced which causes name changes as well as being able to change password
+ 7.Delete Credentials			User can leave the project/company
+ 8.Configure System			Need to be able to setup Jenkins to be able to work correctly or to be changed as systems change
+ 9.Configure Global Security		Need to be able to eforce security policies, so that the correct people have access to the correct areas of the project
+10.Prepare for Shutdown			Need to ensure that Jenkins can be properly shutdown.

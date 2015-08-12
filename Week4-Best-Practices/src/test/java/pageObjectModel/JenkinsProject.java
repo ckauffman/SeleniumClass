@@ -12,20 +12,23 @@ import static org.junit.Assert.fail;
  * Created by Owner on 11/29/2014.
  */
 public class JenkinsProject {
-    private WebDriver driver;
     public String projectName;
+    private WebDriver driver;
     private String baseUrl = "http://localhost:8080/";
 
-    public JenkinsProject(WebDriver driver){
+    public JenkinsProject(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void addProject(String baseProjectName) throws InterruptedException{
+    public void addProject(String baseProjectName) throws InterruptedException {
         driver.findElement(By.linkText("Jenkins")).click();
         driver.findElement(By.linkText("New Item")).click();
-        for (int second = 0;; second++) {
+        for (int second = 0; ; second++) {
             if (second >= 60) fail("timeout");
-            try { if (isElementPresent(By.id("name"))) break; } catch (Exception e) {}
+            try {
+                if (isElementPresent(By.id("name"))) break;
+            } catch (Exception e) {
+            }
             Thread.sleep(1000);
         }
 
@@ -42,12 +45,12 @@ public class JenkinsProject {
 
     }
 
-    public void editProject(){
+    public void editProject() {
         driver.findElement(By.linkText("Jenkins")).click();
 
         try {
             driver.findElement(By.linkText(projectName)).click();
-        } catch (Exception e){
+        } catch (Exception e) {
             Reporting reporting = new Reporting();
             String errorFile = reporting.takeScreenshot(driver);
             fail("Unable to find project " + projectName + ", screenshot at " + errorFile + " full error details: " + e.toString());
@@ -55,25 +58,28 @@ public class JenkinsProject {
 
     }
 
-    public void buildProject(String projectName){
+    public void buildProject(String projectName) {
         //Add code from BuildNow here
         driver.get(baseUrl + "/");
         editProject();
         driver.findElement(By.linkText("Build Now")).click();
         driver.findElement(By.linkText("Jenkins")).click();
         driver.findElement(By.linkText("Build History")).click();
-        try{
+        try {
             driver.findElement(By.linkText(projectName)).click();
-        } catch (Exception e){
+        } catch (Exception e) {
             Reporting reporting = new Reporting();
             String errorFile = reporting.takeScreenshot(driver);
-            fail("Unable to find build in build history " + projectName + ", screenshot at " + errorFile + " full error details: " + e.toString());
+            fail("Unable to find project " + projectName + ", screenshot at " + errorFile + " full error details: " + e.toString());
+
+
         }
-        assertEquals("Project "+projectName, driver.findElement(By.cssSelector("h1.job-index-headline.page-headline")).getText());
+
+        assertEquals("Project " + projectName, driver.findElement(By.cssSelector("h1.job-index-headline.page-headline")).getText());
 
     }
 
-    public void deleteProject(String projectName){
+    public void deleteProject(String projectName) {
 
     }
 

@@ -25,6 +25,7 @@ public class BuildNow {
   @Test
   public void testBuildNow() throws Exception {
     driver.get(baseUrl + "/");
+    driver.findElement(By.linkText("Jenkins")).click();
     driver.findElement(By.linkText("First Project")).click();
     driver.findElement(By.linkText("Build Now")).click();
     driver.findElement(By.linkText("Jenkins")).click();
