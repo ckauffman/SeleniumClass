@@ -32,9 +32,10 @@ public class AddProject {
     driver.findElement(By.id("ok-button")).click();
     // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
     new Select(driver.findElement(By.name("_.compressionLevel"))).selectByVisibleText("System Default");
-    driver.findElement(By.id("radio-block-2")).click();
-    driver.findElement(By.id("cb17")).click();
-    // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
+    driver.findElement(By.id("radio-block-1")).click();
+    driver.findElement(By.id("cb16")).click();
+    driver.findElement(By.name("_.password")).clear();
+    driver.findElement(By.name("_.password")).sendKeys("test");
     driver.findElement(By.id("radio-block-0")).click();
     driver.findElement(By.id("yui-gen11-button")).click();
     driver.findElement(By.id("yui-gen30-button")).click();
