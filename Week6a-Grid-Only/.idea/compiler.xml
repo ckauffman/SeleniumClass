@@ -25,5 +25,8 @@
         <module name="Week6a-Grid-Only" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Week6a-Grid-Only" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
