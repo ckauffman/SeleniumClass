@@ -26,5 +26,8 @@
         <module name="Week6b-Grid-And-Jenkins" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Week6b-Grid-And-Jenkins" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

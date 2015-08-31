@@ -17,7 +17,7 @@ public class TestBrowsers {
         runBrowser.driver.findElement(By.id("ok-button")).click();
 
         runBrowser.driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
-        //runBrowser.driver.findElement(By.id("yui-gen30-button")).click();
+        runBrowser.driver.findElement(By.id("yui-gen30-button")).click();
         runBrowser.driver.quit();
 
     }
