@@ -1,4 +1,178 @@
 -------------------------------------------------------------------------------
 Test set: TestBrowsers
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.004 sec - in TestBrowsers
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 85.777 sec <<< FAILURE! - in TestBrowsers
+testProjectByIE(TestBrowsers)  Time elapsed: 4.942 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Unexpected error launching Internet Explorer. Browser zoom level was set to 125%. It should be set to 100% (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.68 seconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'XPN-VM', ip: '192.168.86.130', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Command duration or timeout: 4.03 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'XPN-VM', ip: '192.168.86.130', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at RunBrowser.<init>(RunBrowser.java:47)
+	at TestBrowsers.testProjectByBrowser(TestBrowsers.java:8)
+	at TestBrowsers.testProjectByIE(TestBrowsers.java:29)
+Caused by: org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Browser zoom level was set to 125%. It should be set to 100% (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.68 seconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'XPN-VM', ip: '192.168.86.130', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'XPN-VM', ip: '192.168.86.130', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: driver.version: InternetExplorerDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:162)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:225)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:182)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:174)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:59)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.newInstance(DefaultDriverProvider.java:53)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:54)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:214)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+testProjectByFirefox(TestBrowsers)  Time elapsed: 66.507 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ppData\Local\Temp\anonymous424453990452998860webdriver-profile\extensions\webdriver-staging
+1440983259968	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1440983259968	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1440983259969	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1440983259970	addons.xpi	DEBUG	checkForChanges
+1440983259971	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous424453990452998860webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.44.0","st":1440983252111,"mt":1440983252084}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"40.0.3","st":1440983018334,"mt":1440983018252}}}
+1440983259972	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1440983259986	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1440983259987	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous424453990452998860webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.44.0","st":1440983252111,"mt":1440983252084}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"40.0.3","st":1440983018334,"mt":1440983018252}}}
+1440983259989	addons.xpi	DEBUG	No changes found
+1440983260003	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1440983260004	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1440983260004	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1440983260005	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1440983260005	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1440983260006	addons.manager	DEBUG	Starting provider: GMPProvider
+1440983260012	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1440983260013	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1440983260015	addons.manager	DEBUG	Starting provider: PluginProvider
+1440983260015	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1440983260016	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1440983260016	addons.manager	DEBUG	Completed startup sequence
+1440983260086	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\TestVM\AppData\Local\Temp\anonymous424453990452998860webdriver-profile\extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1440983260270	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1440983260270	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1440983260271	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1440983260436	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1440983260437	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1440983260438	addons.xpi-utils	DEBUG	Successfully read XPI database
+1440983260686	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1440983260686	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1440983260687	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+JavaScript error: file:///C:/Users/TestVM/AppData/Local/Temp/anonymous424453990452998860webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11487: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+
+Command duration or timeout: 65.63 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'XPN-VM', ip: '192.168.86.130', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at RunBrowser.<init>(RunBrowser.java:47)
+	at TestBrowsers.testProjectByBrowser(TestBrowsers.java:8)
+	at TestBrowsers.testProjectByFirefox(TestBrowsers.java:24)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ppData\Local\Temp\anonymous424453990452998860webdriver-profile\extensions\webdriver-staging
+1440983259968	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1440983259968	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1440983259969	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1440983259970	addons.xpi	DEBUG	checkForChanges
+1440983259971	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous424453990452998860webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.44.0","st":1440983252111,"mt":1440983252084}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"40.0.3","st":1440983018334,"mt":1440983018252}}}
+1440983259972	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1440983259986	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1440983259987	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous424453990452998860webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.44.0","st":1440983252111,"mt":1440983252084}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"40.0.3","st":1440983018334,"mt":1440983018252}}}
+1440983259989	addons.xpi	DEBUG	No changes found
+1440983260003	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1440983260004	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1440983260004	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1440983260005	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1440983260005	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1440983260006	addons.manager	DEBUG	Starting provider: GMPProvider
+1440983260012	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1440983260013	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1440983260015	addons.manager	DEBUG	Starting provider: PluginProvider
+1440983260015	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1440983260016	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1440983260016	addons.manager	DEBUG	Completed startup sequence
+1440983260086	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\TestVM\AppData\Local\Temp\anonymous424453990452998860webdriver-profile\extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1440983260270	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1440983260270	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1440983260271	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1440983260436	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1440983260437	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1440983260438	addons.xpi-utils	DEBUG	Successfully read XPI database
+1440983260686	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1440983260686	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1440983260687	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+JavaScript error: file:///C:/Users/TestVM/AppData/Local/Temp/anonymous424453990452998860webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11487: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'XPN-VM', ip: '192.168.86.130', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:104)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:59)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.newInstance(DefaultDriverProvider.java:53)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:54)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:214)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+

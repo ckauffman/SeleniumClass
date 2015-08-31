@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestBrowsersRemoteSimple" time="17.847" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestBrowsersRemoteSimple" time="55.838" tests="1" errors="1" skipped="0" failures="0">
   <properties>
-    <property name="idea.version" value="14.0.1"/>
+    <property name="idea.version" value="14.1.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_71\jre\bin"/>
-    <property name="java.vm.version" value="24.71-b01"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\bin"/>
+    <property name="java.vm.version" value="25.45-b02"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="idea.launcher.port" value="7534"/>
     <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\SeleniumProjects\SeleniumClass\Week6a-Grid-Only"/>
-    <property name="java.runtime.version" value="1.7.0_71-b14"/>
+    <property name="java.runtime.version" value="1.8.0_45-b15"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_71\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Owner\AppData\Local\Temp\"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\TestVM\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 8"/>
+    <property name="os.name" value="Windows 7"/>
     <property name="classworlds.conf" value="C:\apache-maven-3.2.5\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_71\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Java\jdk1.7.0_45\bin\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files (x86)\Git\git-cheetah\..\bin;C:\Program Files (x86)\nodejs\bin;C:\Program Files (x86)\nodejs\;C:\adt-bundle-windows\apache-ant-1.9.3\bin\;C:\apache-maven-3.2.5\bin;C:\adt-bundle-windows\sdk\tools;C:\Users\Owner\AppData\Roaming\npm;C:\adt-bundle-windows\sdk\platform-tools;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Ruby200\bin;C:\Windows\system32\;C:\Windows\system32\;C:\Program Files\NCR\Common Files\Shared ICU Libraries for Teradata\lib;C:\Program Files\NCR\Teradata Client\Bin;C:\Program Files\NCR\Teradata Client\cliv2\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Common Files\NCR\AXSMOD\;C:\jdk\jre\bin;C:\jdk\jre\bin\server;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Git\cmd;C:\Program Files\Maven\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.8.0_45\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="51.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="6.2"/>
-    <property name="user.home" value="C:\Users\Owner"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\TestVM"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.7"/>
-    <property name="idea.launcher.bin.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 14.0\bin"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="Owner"/>
-    <property name="java.class.path" value="C:\apache-maven-3.2.5\boot\plexus-classworlds-2.5.2.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 14.0\lib\idea_rt.jar"/>
-    <property name="java.vm.specification.version" value="1.7"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_71\jre"/>
-    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=14.0.1 test"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="idea.launcher.bin.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 14.1.4\bin"/>
+    <property name="file.encoding" value="windows-1252"/>
+    <property name="user.name" value="TestVM"/>
+    <property name="java.class.path" value="C:\apache-maven-3.2.5\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 14.1.4\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_45\jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=14.1.4 test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.7.0_71"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_71\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes"/>
+    <property name="java.version" value="1.8.0_45"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\apache-maven-3.2.5"/>
     <property name="file.separator" value="\"/>
@@ -60,7 +60,121 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="testProject" classname="TestBrowsersRemoteSimple" time="17.847"/>
+  <testcase name="testProject" classname="TestBrowsersRemoteSimple" time="55.838">
+    <error message="Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:&#10;a\Local\Temp\anonymous8845595683806369245webdriver-profile\extensions\webdriver-staging&#10;1440983315044	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}&#10;1440983315045	addons.xpi	DEBUG	Skipping unavailable install location app-system-share&#10;1440983315045	addons.xpi	DEBUG	Skipping unavailable install location app-system-local&#10;1440983315046	addons.xpi	DEBUG	checkForChanges&#10;1440983315047	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous8845595683806369245webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1440983306335,&quot;mt&quot;:1440983306240}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;40.0.3&quot;,&quot;st&quot;:1440983018334,&quot;mt&quot;:1440983018252}}}&#10;1440983315048	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com&#10;1440983315059	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}&#10;1440983315061	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous8845595683806369245webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.44.0&quot;,&quot;st&quot;:1440983306335,&quot;mt&quot;:1440983306240}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;40.0.3&quot;,&quot;st&quot;:1440983018334,&quot;mt&quot;:1440983018252}}}&#10;1440983315062	addons.xpi	DEBUG	No changes found&#10;1440983315072	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider&#10;1440983315073	addons.manager	DEBUG	Provider finished startup: XPIProvider&#10;1440983315073	addons.manager	DEBUG	Starting provider: LightweightThemeManager&#10;1440983315073	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager&#10;1440983315074	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager&#10;1440983315074	addons.manager	DEBUG	Starting provider: GMPProvider&#10;1440983315080	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider&#10;1440983315081	addons.manager	DEBUG	Provider finished startup: GMPProvider&#10;1440983315081	addons.manager	DEBUG	Starting provider: PluginProvider&#10;1440983315081	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider&#10;1440983315082	addons.manager	DEBUG	Provider finished startup: PluginProvider&#10;1440983315082	addons.manager	DEBUG	Completed startup sequence&#10;1440983315146	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\TestVM\AppData\Local\Temp\anonymous8845595683806369245webdriver-profile\extensions.json&#10;*** Blocklist::_loadBlocklistFromFile: blocklist is disabled&#10;1440983315320	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;&#10;1440983315321	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;&#10;1440983315321	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;&#10;1440983315465	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS&#10;1440983315466	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...&#10;1440983315467	addons.xpi-utils	DEBUG	Successfully read XPI database&#10;1440983315631	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider&#10;1440983315632	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider&#10;1440983315633	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider&#10;JavaScript error: file:///C:/Users/TestVM/AppData/Local/Temp/anonymous8845595683806369245webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11487: TypeError: this.server_ is undefined&#10;JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]&#10;&#10;Command duration or timeout: 55.83 seconds&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;XPN-VM&apos;, ip: &apos;192.168.86.130&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+a\Local\Temp\anonymous8845595683806369245webdriver-profile\extensions\webdriver-staging
+1440983315044	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1440983315045	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1440983315045	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1440983315046	addons.xpi	DEBUG	checkForChanges
+1440983315047	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous8845595683806369245webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.44.0","st":1440983306335,"mt":1440983306240}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"40.0.3","st":1440983018334,"mt":1440983018252}}}
+1440983315048	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1440983315059	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1440983315061	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous8845595683806369245webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.44.0","st":1440983306335,"mt":1440983306240}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"40.0.3","st":1440983018334,"mt":1440983018252}}}
+1440983315062	addons.xpi	DEBUG	No changes found
+1440983315072	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1440983315073	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1440983315073	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1440983315073	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1440983315074	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1440983315074	addons.manager	DEBUG	Starting provider: GMPProvider
+1440983315080	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1440983315081	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1440983315081	addons.manager	DEBUG	Starting provider: PluginProvider
+1440983315081	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1440983315082	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1440983315082	addons.manager	DEBUG	Completed startup sequence
+1440983315146	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\TestVM\AppData\Local\Temp\anonymous8845595683806369245webdriver-profile\extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1440983315320	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1440983315321	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1440983315321	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1440983315465	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1440983315466	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1440983315467	addons.xpi-utils	DEBUG	Successfully read XPI database
+1440983315631	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1440983315632	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1440983315633	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+JavaScript error: file:///C:/Users/TestVM/AppData/Local/Temp/anonymous8845595683806369245webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11487: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+
+Command duration or timeout: 55.83 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'XPN-VM', ip: '192.168.86.130', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at TestBrowsersRemoteSimple.testProject(TestBrowsersRemoteSimple.java:22)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+a\Local\Temp\anonymous8845595683806369245webdriver-profile\extensions\webdriver-staging
+1440983315044	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1440983315045	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1440983315045	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1440983315046	addons.xpi	DEBUG	checkForChanges
+1440983315047	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous8845595683806369245webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.44.0","st":1440983306335,"mt":1440983306240}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"40.0.3","st":1440983018334,"mt":1440983018252}}}
+1440983315048	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1440983315059	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1440983315061	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\TestVM\\AppData\\Local\\Temp\\anonymous8845595683806369245webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.44.0","st":1440983306335,"mt":1440983306240}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"40.0.3","st":1440983018334,"mt":1440983018252}}}
+1440983315062	addons.xpi	DEBUG	No changes found
+1440983315072	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1440983315073	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1440983315073	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1440983315073	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1440983315074	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1440983315074	addons.manager	DEBUG	Starting provider: GMPProvider
+1440983315080	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1440983315081	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1440983315081	addons.manager	DEBUG	Starting provider: PluginProvider
+1440983315081	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1440983315082	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1440983315082	addons.manager	DEBUG	Completed startup sequence
+1440983315146	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\TestVM\AppData\Local\Temp\anonymous8845595683806369245webdriver-profile\extensions.json
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1440983315320	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1440983315321	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1440983315321	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1440983315465	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1440983315466	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1440983315467	addons.xpi-utils	DEBUG	Successfully read XPI database
+1440983315631	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1440983315632	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1440983315633	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+JavaScript error: file:///C:/Users/TestVM/AppData/Local/Temp/anonymous8845595683806369245webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11487: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'XPN-VM', ip: '192.168.86.130', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:104)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:59)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.newInstance(DefaultDriverProvider.java:53)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:54)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:214)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:168)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]></error>
+  </testcase>
 </testsuite>
