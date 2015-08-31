@@ -23,7 +23,11 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Week5" />
+        <module name="Week5-Browsers" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Week5-Browsers" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
