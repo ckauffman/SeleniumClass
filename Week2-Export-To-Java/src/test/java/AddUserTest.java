@@ -1,7 +1,9 @@
 
-
+//Test
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.*;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
@@ -9,7 +11,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class DeleteUser {
+public class AddUserTest {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -23,8 +25,8 @@ public class DeleteUser {
   }
 
   @Test
-  public void testDeleteUser() throws Exception {
-    driver.get("http://localhost:8080/");
+  public void testAddUser() throws Exception {
+    driver.get(baseUrl + "/");
     driver.findElement(By.linkText("Jenkins")).click();
     driver.findElement(By.linkText("Credentials")).click();
     for (int second = 0;; second++) {
@@ -34,26 +36,19 @@ public class DeleteUser {
     }
 
     driver.findElement(By.linkText("Global credentials")).click();
+    driver.findElement(By.linkText("Add Credentials")).click();
     for (int second = 0;; second++) {
     	if (second >= 60) fail("timeout");
-    	try { if (isElementPresent(By.linkText("test3/****** (update)"))) break; } catch (Exception e) {}
+    	try { if (isElementPresent(By.name("_.username"))) break; } catch (Exception e) {}
     	Thread.sleep(1000);
     }
 
-    driver.findElement(By.linkText("test3/****** (update)")).click();
-    for (int second = 0;; second++) {
-    	if (second >= 60) fail("timeout");
-    	try { if (isElementPresent(By.linkText("Delete"))) break; } catch (Exception e) {}
-    	Thread.sleep(1000);
-    }
+    String userName = "Username " + RandomStringUtils.randomAlphabetic(5);
 
-    driver.findElement(By.linkText("Delete")).click();
-    for (int second = 0;; second++) {
-    	if (second >= 60) fail("timeout");
-    	try { if (isElementPresent(By.id("yui-gen1-button"))) break; } catch (Exception e) {}
-    	Thread.sleep(1000);
-    }
-
+    driver.findElement(By.name("_.username")).clear();
+    driver.findElement(By.name("_.username")).sendKeys(userName);
+    driver.findElement(By.name("_.password")).clear();
+    driver.findElement(By.name("_.password")).sendKeys("password");
     driver.findElement(By.id("yui-gen1-button")).click();
   }
 

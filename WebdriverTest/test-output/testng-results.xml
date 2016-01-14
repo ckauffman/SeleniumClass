@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17168" started-at="2016-01-12T23:48:06Z" finished-at="2016-01-12T23:48:24Z">
+  <suite name="Default suite" duration-ms="23044" started-at="2016-01-14T20:27:04Z" finished-at="2016-01-14T20:27:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17168" started-at="2016-01-12T23:48:06Z" finished-at="2016-01-12T23:48:24Z">
+    <test name="Default test" duration-ms="23044" started-at="2016-01-14T20:27:04Z" finished-at="2016-01-14T20:27:27Z">
       <class name="jenkinsTests.AddProjectExportAndGridPageObjectsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:jenkinsTests.AddProjectExportAndGridPageObjectsTest@ee2549]" name="setUp" is-config="true" duration-ms="7" started-at="2016-01-12T16:48:07Z" finished-at="2016-01-12T16:48:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:jenkinsTests.AddProjectExportAndGridPageObjectsTest@ee2549]" name="setUp" is-config="true" duration-ms="16" started-at="2016-01-14T13:27:04Z" finished-at="2016-01-14T13:27:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testExportToJava()[pri:0, instance:jenkinsTests.AddProjectExportAndGridPageObjectsTest@ee2549]" name="testExportToJava" duration-ms="17119" started-at="2016-01-12T16:48:07Z" finished-at="2016-01-12T16:48:24Z">
+        <test-method status="PASS" signature="testExportToJava()[pri:0, instance:jenkinsTests.AddProjectExportAndGridPageObjectsTest@ee2549]" name="testExportToJava" duration-ms="23012" started-at="2016-01-14T13:27:04Z" finished-at="2016-01-14T13:27:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExportToJava -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:jenkinsTests.AddProjectExportAndGridPageObjectsTest@ee2549]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-01-12T16:48:24Z" finished-at="2016-01-12T16:48:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:jenkinsTests.AddProjectExportAndGridPageObjectsTest@ee2549]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-01-14T13:27:27Z" finished-at="2016-01-14T13:27:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
