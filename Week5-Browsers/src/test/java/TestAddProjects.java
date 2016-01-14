@@ -43,7 +43,7 @@ public class TestAddProjects {
 
     @Test
     public void testAddProject() {
-        addProjectByBrowser("IE");
+       // addProjectByBrowser("IE");
         addProjectByBrowser("Chrome");
 
     }
