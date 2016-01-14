@@ -34,7 +34,7 @@ public class JenkinsProject {
         driver.findElement(By.id("name")).sendKeys(projectName);
         driver.findElement(By.name("mode")).click();
         driver.findElement(By.id("ok-button")).click();
-        driver.findElement(By.id("yui-gen30-button")).click();
+        driver.findElement(By.id("yui-gen39-button")).click();
         assertEquals(projectName + " [Jenkins]", driver.getTitle());
     }
 
