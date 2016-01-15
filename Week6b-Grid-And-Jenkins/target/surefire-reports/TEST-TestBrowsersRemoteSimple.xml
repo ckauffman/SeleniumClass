@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestBrowsersRemoteSimple" time="2.184" tests="1" errors="1" skipped="0" failures="0">
+<testsuite name="TestBrowsersRemoteSimple" time="11.646" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="_Run Selenium"/>
@@ -9,14 +9,14 @@
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
     <property name="JENKINS_HOME" value="C:\Program Files\Jenkins"/>
     <property name="HUDSON_SERVER_COOKIE" value="cbb50deead534daf"/>
-    <property name="POM_ARTIFACTID" value="Week5"/>
+    <property name="POM_ARTIFACTID" value="GridAndJenkins"/>
     <property name="os.name" value="Windows 7"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_07\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_07\jre\classes"/>
     <property name="EXECUTOR_NUMBER" value="0"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="POM_DISPLAYNAME" value="Week5"/>
+    <property name="POM_DISPLAYNAME" value="GridAndJenkins"/>
     <property name="NODE_LABELS" value="master"/>
     <property name="TEMP" value="C:\Windows\TEMP"/>
     <property name="java.runtime.version" value="1.7.0_67-b01"/>
@@ -25,7 +25,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="ProgramFiles" value="C:\Program Files"/>
     <property name="user.language" value="en"/>
-    <property name="BUILD_DISPLAY_NAME" value="#20"/>
+    <property name="BUILD_DISPLAY_NAME" value="#22"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_07\jre\bin"/>
     <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="2f74099e0b9ee284871704ebd7e332d6d8fadd47"/>
     <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
@@ -36,7 +36,7 @@
     <property name="sun.arch.data.model" value="32"/>
     <property name="NODE_NAME" value="master"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_07\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="20"/>
+    <property name="BUILD_ID" value="22"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -51,7 +51,7 @@
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_07\jre"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="6.1"/>
-    <property name="POM_VERSION" value="1.0"/>
+    <property name="POM_VERSION" value="1.0-SNAPSHOT"/>
     <property name="TMP" value="C:\Windows\TEMP"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.version" value="24.65-b04"/>
@@ -69,10 +69,10 @@
     <property name="SERVICE_ID" value="jenkins"/>
     <property name="COMPUTERNAME" value="XPN-VM"/>
     <property name="user.script" value=""/>
-    <property name="POM_GROUPID" value="com.tutorials"/>
+    <property name="POM_GROUPID" value="Week6"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
     <property name="user.home" value="C:\Windows\System32\config\systemprofile"/>
-    <property name="BUILD_TAG" value="jenkins-_Run Selenium-20"/>
+    <property name="BUILD_TAG" value="jenkins-_Run Selenium-22"/>
     <property name="JENKINS_SERVER_COOKIE" value="cbb50deead534daf"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -86,7 +86,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2"/>
     <property name="java.class.path" value="C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.5.jar;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\boot\plexus-classworlds-2.5.1.jar;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\ C:\Program Files\Jenkins\war\WEB-INF\lib\remoting-2.53.2.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 2512"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\ C:\Program Files\Jenkins\war\WEB-INF\lib\remoting-2.53.2.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 2451"/>
     <property name="LG_PATH" value="C:\Program Files\HP\LoadRunner\"/>
     <property name="Path" value="C:\Program Files\Java\jdk1.7.0_07/bin;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\compare;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\composite;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\conjure;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\convert;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\identify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\mogrify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\montage;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\stream;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_07\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\TortoiseGit\bin;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\platform-tools;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\tools;C:\Program Files\HP\LoadRunner\strawberry-perl\perl\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Ruby200\bin\ruby.exe,C:\Softwares\IEDriverServer.exe, C:\Softwares\chromedriver.exe;"/>
     <property name="VS120COMNTOOLS" value="C:\Program Files\Microsoft Visual Studio 12.0\Common7\Tools\"/>
@@ -102,7 +102,7 @@
     <property name="OS" value="Windows_NT"/>
     <property name="HUDSON_HOME" value="C:\Program Files\Jenkins"/>
     <property name="PATH+MAVEN" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\/bin"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/_Run%20Selenium/20/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/_Run%20Selenium/22/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="x86"/>
@@ -115,7 +115,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\"/>
     <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
-    <property name="BUILD_NUMBER" value="20"/>
+    <property name="BUILD_NUMBER" value="22"/>
     <property name="BASE" value="C:\Program Files\Jenkins"/>
     <property name="ANDROID_HOME" value="C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
@@ -134,37 +134,40 @@
     <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
     <property name="GIT_URL" value="https://github.com/ckauffman/SeleniumClass"/>
   </properties>
-  <testcase name="testProject" classname="TestBrowsersRemoteSimple" time="2.184">
-    <error message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;XPN-VM&apos;, ip: &apos;192.168.237.136&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException"><![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+  <testcase name="testProject" classname="TestBrowsersRemoteSimple" time="11.646">
+    <error message="Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;First Project&quot;}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf&apos;, time: &apos;2014-10-23 20:02:37&apos;&#10;System info: host: &apos;XPN-VM&apos;, ip: &apos;192.168.237.136&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Driver info: driver.version: unknown&#10;Command duration or timeout: 1.56 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;XPN-VM&apos;, ip: &apos;192.168.237.136&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: eb954d01-f517-4705-92c6-b4e40202a486&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=eb954d01-f517-4705-92c6-b4e40202a486, version=31.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=true, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"First Project"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'XPN-VM', ip: '192.168.237.136', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown
+Command duration or timeout: 1.56 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'XPN-VM', ip: '192.168.237.136', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_67'
-Driver info: driver.version: RemoteWebDriver
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
-	at TestBrowsersRemoteSimple.testProject(TestBrowsersRemoteSimple.java:24)
+Session ID: eb954d01-f517-4705-92c6-b4e40202a486
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=eb954d01-f517-4705-92c6-b4e40202a486, version=31.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at TestBrowsersRemoteSimple.testProject(TestBrowsersRemoteSimple.java:31)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"First Project"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
+System info: host: 'XPN-VM', ip: '192.168.237.136', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'XPN-VM', ip: '192.168.237.136', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/TestVM/AppData/Local/Temp/anonymous2629062977855461148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/TestVM/AppData/Local/Temp/anonymous2629062977855461148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/TestVM/AppData/Local/Temp/anonymous2629062977855461148webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/TestVM/AppData/Local/Temp/anonymous2629062977855461148webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/TestVM/AppData/Local/Temp/anonymous2629062977855461148webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
 ]]></error>
   </testcase>
 </testsuite>

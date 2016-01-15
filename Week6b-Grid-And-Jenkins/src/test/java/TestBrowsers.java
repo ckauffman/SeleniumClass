@@ -22,18 +22,17 @@ public class TestBrowsers {
 
     }
 
-    @Test
+    /*@Test
     public void testProjectByFirefox() throws Exception {
         testProjectByBrowser("Firefox");
-
-    }
-/*    @Test
+    }*/
+    @Test
     public void testProjectByIE() throws Exception {
         testProjectByBrowser("IE");
-    }*/
+    }
 
-    @Test
+    /*@Test
     public void testProjectByChrome() throws Exception {
         testProjectByBrowser("Chrome");
-    }
+    }*/
 }

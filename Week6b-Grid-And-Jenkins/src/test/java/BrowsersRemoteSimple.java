@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 import static java.lang.Thread.sleep;
 import static org.junit.Assert.fail;
 
-public class TestBrowsersRemoteSimple {
+public class BrowsersRemoteSimple {
 
     @Test
     public void testProject() {
