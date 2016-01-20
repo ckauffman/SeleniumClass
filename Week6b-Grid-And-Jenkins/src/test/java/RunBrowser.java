@@ -4,6 +4,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
 import sun.security.krb5.internal.crypto.Des;
 
 import java.net.MalformedURLException;
@@ -16,16 +17,21 @@ public class RunBrowser {
     WebDriver driver;
     String workingDir = System.getProperty("user.dir");
 
-    public RunBrowser(String driverType, boolean runToGrid) {
+
+	public RunBrowser(String driverType, boolean runToGrid) {
         DesiredCapabilities desiredCapabilities = null;
 
-        if (driverType.equalsIgnoreCase("IE")) {
-            System.setProperty("webdriver.ie.driver", workingDir + "\\drivers\\IEDriverServer.exe");
+        if (driverType.equalsIgnoreCase("ie")) {
+            //System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe"/* workingDir + "\\drivers\\IEDriverServer.exe"*/);
             //Disable Internet Explorer security errors for IE 9-10
-            desiredCapabilities = DesiredCapabilities.internetExplorer();
-            desiredCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+           desiredCapabilities = DesiredCapabilities.internetExplorer();
+           desiredCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+           System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe"/* workingDir + "\\drivers\\IEDriverServer.exe"*/);
+           driver = new InternetExplorerDriver(desiredCapabilities);
             if (!runToGrid) {
-                driver = new InternetExplorerDriver(desiredCapabilities);
+            	
+            	// System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe"/* workingDir + "\\drivers\\IEDriverServer.exe"*/);
+               // driver = new InternetExplorerDriver(desiredCapabilities);
             }
         } else if (driverType.equalsIgnoreCase("Chrome")) {
             if (!runToGrid) {

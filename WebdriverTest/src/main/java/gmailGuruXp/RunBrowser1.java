@@ -1,4 +1,4 @@
-package week6aGrid;
+package gmailGuruXp;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,11 +13,11 @@ import java.util.concurrent.TimeUnit;
 
 import static com.thoughtworks.selenium.SeleneseTestBase.fail;
 
-public class RunBrowser {
+public class RunBrowser1 {
     WebDriver driver;
     String workingDir = System.getProperty("user.dir");
 
-    public RunBrowser(String driverType, boolean runToGrid) {
+    public RunBrowser1(String driverType, boolean runToGrid) {
         DesiredCapabilities desiredCapabilities = null;
 
         if (driverType.equalsIgnoreCase("IE")) {

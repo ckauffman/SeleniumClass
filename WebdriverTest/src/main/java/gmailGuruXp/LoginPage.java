@@ -1,4 +1,4 @@
-package gmail;
+package gmailGuruXp;
 
 import gmailGuruTests.Util;
 import junit.framework.Assert;

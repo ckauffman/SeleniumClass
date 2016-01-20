@@ -1,4 +1,4 @@
-package week5Browsers;
+package gmailGuruXp;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class AddProject {
+public class ConfigureProjects {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -23,22 +23,18 @@ public class AddProject {
   }
 
   @Test
-  public void testAddProject() throws Exception {
-    driver.get(baseUrl + "/");
-    driver.findElement(By.linkText("New Item")).click();
-    driver.findElement(By.id("name")).clear();
-    driver.findElement(By.id("name")).sendKeys("test5556");
-    driver.findElement(By.name("mode")).click();
-    driver.findElement(By.id("ok-button")).click();
-    // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
-    new Select(driver.findElement(By.name("_.compressionLevel"))).selectByVisibleText("System Default");
-    driver.findElement(By.id("radio-block-2")).click();
-    driver.findElement(By.id("cb17")).click();
-    // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
+  public void testConfigureProjects() throws Exception {
+    driver.get(baseUrl + "/job/First%20Project/");
+    driver.findElement(By.linkText("Configure")).click();
+    driver.findElement(By.name("description")).clear();
+    driver.findElement(By.name("description")).sendKeys("New Description");
     driver.findElement(By.id("radio-block-0")).click();
-    driver.findElement(By.id("yui-gen11-button")).click();
+    driver.findElement(By.id("radio-block-1")).click();
+    driver.findElement(By.name("_.cvsRoot")).clear();
+    driver.findElement(By.name("_.cvsRoot")).sendKeys("test");
+    new Select(driver.findElement(By.cssSelector("div[name=\"repositoryItems\"] > table > tbody > tr > td.setting-main > select.setting-input.dropdownList"))).selectByVisibleText("Branch");
+    driver.findElement(By.id("radio-block-0")).click();
     driver.findElement(By.id("yui-gen30-button")).click();
-    assertEquals("Project test5556", driver.findElement(By.cssSelector("h1.job-index-headline.page-headline")).getText());
   }
 
   @After
@@ -83,3 +79,4 @@ public class AddProject {
     }
   }
 }
+

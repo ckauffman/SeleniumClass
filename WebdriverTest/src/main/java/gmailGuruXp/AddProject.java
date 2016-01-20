@@ -1,4 +1,4 @@
-package week6bGridAndJenkins;
+package gmailGuruXp;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
@@ -27,12 +27,18 @@ public class AddProject {
     driver.get(baseUrl + "/");
     driver.findElement(By.linkText("New Item")).click();
     driver.findElement(By.id("name")).clear();
-    driver.findElement(By.id("name")).sendKeys("A selenium test");
+    driver.findElement(By.id("name")).sendKeys("test5556");
     driver.findElement(By.name("mode")).click();
     driver.findElement(By.id("ok-button")).click();
-    new Select(driver.findElement(By.name("_.compressionLevel"))).selectByVisibleText("System Default");
     // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
-    driver.findElement(By.id("yui-gen38-button")).click();
+    new Select(driver.findElement(By.name("_.compressionLevel"))).selectByVisibleText("System Default");
+    driver.findElement(By.id("radio-block-2")).click();
+    driver.findElement(By.id("cb17")).click();
+    // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
+    driver.findElement(By.id("radio-block-0")).click();
+    driver.findElement(By.id("yui-gen11-button")).click();
+    driver.findElement(By.id("yui-gen30-button")).click();
+    assertEquals("Project test5556", driver.findElement(By.cssSelector("h1.job-index-headline.page-headline")).getText());
   }
 
   @After

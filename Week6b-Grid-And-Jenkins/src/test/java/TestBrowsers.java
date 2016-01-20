@@ -6,10 +6,11 @@ import org.openqa.selenium.support.ui.Select;
 import static java.lang.Thread.sleep;
 
 public class TestBrowsers {
-    private boolean runToGrid = true;
+    private boolean runToGrid = false;
     public void testProjectByBrowser(String driverType) {
         RunBrowser runBrowser = new RunBrowser(driverType, runToGrid);
         runBrowser.driver.get("http://localhost:8080");
+        System.out.println("http://localhost:8080 is now running");
         runBrowser.driver.findElement(By.linkText("New Item")).click();
         runBrowser.driver.findElement(By.id("name")).clear();
         runBrowser.driver.findElement(By.id("name")).sendKeys("A selenium " + RandomStringUtils.randomAlphabetic(5));
@@ -22,17 +23,18 @@ public class TestBrowsers {
 
     }
 
-    /*@Test
+/*    @Test
     public void testProjectByFirefox() throws Exception {
         testProjectByBrowser("Firefox");
     }*/
-    @Test
+    
+/*    @Test
     public void testProjectByIE() throws Exception {
         testProjectByBrowser("IE");
-    }
+    }*/
 
-    /*@Test
+    @Test
     public void testProjectByChrome() throws Exception {
         testProjectByBrowser("Chrome");
-    }*/
+    }
 }

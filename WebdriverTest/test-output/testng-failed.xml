@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="jenkinsTests.AddProjectExportAndGridPageObjectsTest">
+      <class name="week2POM3DataDriven6Grid.AddProjectByGridPageObjectsTest">
         <methods>
+          <include name="deleteProjectTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testExportToJava"/>
+          <include name="editProjectTest"/>
+          <include name="creatProjectTest"/>
         </methods>
-      </class> <!-- jenkinsTests.AddProjectExportAndGridPageObjectsTest -->
+      </class> <!-- week2POM3DataDriven6Grid.AddProjectByGridPageObjectsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

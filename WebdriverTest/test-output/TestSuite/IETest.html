@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>IETest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 06 14:14:33 MST 2016</td>
+<td>Started on:</td><td>Fri Jan 15 15:01:02 MST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>33 seconds (33362 ms)</td>
+<tr><td>Total time:</td><td>128 seconds (128124 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,61 +68,39 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='gmailTests.loginGmailTest.setup()'><b>setup</b><br>Test class: gmailTests.loginGmailTest<br>Parameters: IE</td>
-<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070012 (&apos;There are no more files.&apos;) for URL &apos;http://localhost:4159/&apos; (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 31.04 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;XPN-VM&apos;, ip: &apos;192.168.237.136&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:162)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:225)
-	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:182)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:174)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at gmailTests.BaseTest.setup(BaseTest.java:67)
+<td title='gmailTests.loginGmailTest.loginTest()'><b>loginTest</b><br>Test class: gmailTests.loginGmailTest<br>Parameters: 1111, </td>
+<td><div><pre>java.lang.AssertionError: Validate error message when email is incorrect expected [Sorry, Google doesn&apos;t recognize that email.] but found []
+	at gmailTests.loginGmailTest.loginTest(loginGmailTest.java:102)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16503296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace16503296'><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 80070012 (&apos;There are no more files.&apos;) for URL &apos;http://localhost:4159/&apos; (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 31.04 seconds
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;XPN-VM&apos;, ip: &apos;192.168.237.136&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:162)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:225)
-	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:182)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:174)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at gmailTests.BaseTest.setup(BaseTest.java:67)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11033368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11033368'><pre>java.lang.AssertionError: Validate error message when email is incorrect expected [Sorry, Google doesn&apos;t recognize that email.] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at gmailTests.loginGmailTest.loginTest(loginGmailTest.java:102)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
@@ -132,64 +110,64 @@ Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='gmailTests.loginGmailTest.tearDown()'><b>tearDown</b><br>Test class: gmailTests.loginGmailTest</td>
-<td></td>
-<td>0</td>
-<td>gmailTests.loginGmailTest@16e9cbe</td></tr>
-<tr>
-<td title='gmailTests.loginGmailTest.tearDown()'><b>tearDown</b><br>Test class: gmailTests.loginGmailTest</td>
-<td></td>
-<td>0</td>
-<td>gmailTests.loginGmailTest@16e9cbe</td></tr>
-<tr>
-<td title='gmailTests.loginGmailTest.tearDown()'><b>tearDown</b><br>Test class: gmailTests.loginGmailTest</td>
-<td></td>
-<td>0</td>
-<td>gmailTests.loginGmailTest@16e9cbe</td></tr>
-<tr>
-<td title='gmailTests.loginGmailTest.tearDown()'><b>tearDown</b><br>Test class: gmailTests.loginGmailTest</td>
-<td></td>
-<td>0</td>
-<td>gmailTests.loginGmailTest@16e9cbe</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='gmailTests.loginGmailTest.loginTest()'><b>loginTest</b><br>Test class: gmailTests.loginGmailTest<br>Parameters: TRcomission@gmail.com, comission</td>
-<td></td>
-<td>0</td>
-<td>gmailTests.loginGmailTest@16e9cbe</td></tr>
-<tr>
-<td title='gmailTests.loginGmailTest.loginTest()'><b>loginTest</b><br>Test class: gmailTests.loginGmailTest<br>Parameters: 1111, comission</td>
-<td></td>
-<td>0</td>
-<td>gmailTests.loginGmailTest@16e9cbe</td></tr>
-<tr>
-<td title='gmailTests.loginGmailTest.loginTest()'><b>loginTest</b><br>Test class: gmailTests.loginGmailTest<br>Parameters: TRcomission@gmail.com, invalid</td>
-<td></td>
-<td>0</td>
-<td>gmailTests.loginGmailTest@16e9cbe</td></tr>
+<td>1</td>
+<td>gmailTests.loginGmailTest@8d4b54</td></tr>
 <tr>
 <td title='gmailTests.loginGmailTest.loginTest()'><b>loginTest</b><br>Test class: gmailTests.loginGmailTest<br>Parameters: 1111, 1111</td>
+<td><div><pre>java.lang.AssertionError: Validate error message when email is incorrect expected [Sorry, Google doesn&apos;t recognize that email.] but found []
+	at gmailTests.loginGmailTest.loginTest(loginGmailTest.java:102)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13247605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13247605'><pre>java.lang.AssertionError: Validate error message when email is incorrect expected [Sorry, Google doesn&apos;t recognize that email.] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at gmailTests.loginGmailTest.loginTest(loginGmailTest.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>gmailTests.loginGmailTest@8d4b54</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gmailTests.loginGmailTest.loginTest()'><b>loginTest</b><br>Test class: gmailTests.loginGmailTest<br>Parameters: , </td>
 <td></td>
-<td>0</td>
-<td>gmailTests.loginGmailTest@16e9cbe</td></tr>
+<td>31</td>
+<td>gmailTests.loginGmailTest@8d4b54</td></tr>
+<tr>
+<td title='gmailTests.loginGmailTest.loginTest()'><b>loginTest</b><br>Test class: gmailTests.loginGmailTest<br>Parameters: , invalid</td>
+<td></td>
+<td>32</td>
+<td>gmailTests.loginGmailTest@8d4b54</td></tr>
 </table><p>
 </body>
 </html>

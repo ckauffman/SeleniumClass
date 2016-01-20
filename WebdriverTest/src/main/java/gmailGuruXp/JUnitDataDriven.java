@@ -1,4 +1,4 @@
-package jenkinsTests;
+package gmailGuruXp;
 
 import java.util.Arrays;
 import java.util.Collection;

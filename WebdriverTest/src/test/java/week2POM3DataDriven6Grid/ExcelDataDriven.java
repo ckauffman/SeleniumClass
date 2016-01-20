@@ -1,4 +1,4 @@
-package jenkinsTests;
+package week2POM3DataDriven6Grid;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -20,6 +21,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import util.ReadSpreadsheetData;
 
 @RunWith(value = Parameterized.class)
 public class ExcelDataDriven {
@@ -50,49 +53,17 @@ public class ExcelDataDriven {
 		this.sourceCodeManagement = sourceCodeManagement;
 	}
 
+	// Setup prerequisites for test by initializing firefox driver
 	@BeforeClass
 	public static void setUp() throws Exception {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 
-	private void setCheckbox(String checkboxName, String valueToSet) {
-		if (!valueToSet.equalsIgnoreCase("")) {
 
-			WebElement checkbox = driver.findElement(By.id(checkboxName));
-			boolean checkboxChecked = false;
-			// Determine the current state of the checkbox
-			if (checkbox.getAttribute("checked") == null) {
-				checkboxChecked = false;
-			} else if (checkbox.getAttribute("checked")
-					.equalsIgnoreCase("true")) {
-				checkboxChecked = true;
-			} else {
-				checkboxChecked = false;
-			}
-
-			if (checkboxChecked && valueToSet.equalsIgnoreCase("uncheck")) {
-				// It should be unchecked, uncheck it
-				checkbox.click();
-			} else if (!checkboxChecked && valueToSet.equalsIgnoreCase("check")) {
-				// value is unchecked, if it should be checked, click it
-				checkbox.click();
-			}
-		}
-	}
-
-	private void setSourceCodeManagement(String sourceCodeManagement) {
-		if (sourceCodeManagement.equalsIgnoreCase("None")) {
-			driver.findElement(By.id("radio-block-0")).click();
-		} else if (sourceCodeManagement.equalsIgnoreCase("CVS")) {
-			driver.findElement(By.id("radio-block-1")).click();
-		} else if (sourceCodeManagement.equalsIgnoreCase("")) {
-			// do nothing
-		} else {
-			Assert.fail("UNknown naming strategy: " + sourceCodeManagement);
-		}
-	}
-
+	/*
+	 * clicking on checkboxes, radio buttons specified by use of data driving 
+	 */
 	@Test
 	public void testDiscardOldBuilds() throws Exception {
 		if (runSkip.equalsIgnoreCase("x")) {
@@ -121,20 +92,63 @@ public class ExcelDataDriven {
 				}
 			}
 			setSourceCodeManagement(sourceCodeManagement);
-
-			//driver.findElement(By.id("radio-block-0")).click();
-			                   
-			Thread.sleep(10000);
 			driver.findElement(By.id("yui-gen39-button")).click();
 
 			Assert.assertEquals(projectName + " [Jenkins]", driver.getTitle());
 		}
 	}
 
-	/*
-	 * @AfterClass public static void tearDown() throws Exception {
-	 * 
-	 * }
-	 */
+	// Close browser
+	 @AfterClass public static void tearDown() throws Exception {
+		driver.quit();
+	
+	}
 
+	
+	 /**
+	  * Click checkbox depending on specified in data driven excel sheet
+	  * @param checkboxName
+	  * @param valueToSet
+	  */
+	private void setCheckbox(String checkboxName, String valueToSet) {
+		if (!valueToSet.equalsIgnoreCase("")) {
+
+			WebElement checkbox = driver.findElement(By.id(checkboxName));
+			boolean checkboxChecked = false;
+			// Determine the current state of the checkbox
+			if (checkbox.getAttribute("checked") == null) {
+				checkboxChecked = false;
+			} else if (checkbox.getAttribute("checked")
+					.equalsIgnoreCase("true")) {
+				checkboxChecked = true;
+			} else {
+				checkboxChecked = false;
+			}
+
+			if (checkboxChecked && valueToSet.equalsIgnoreCase("uncheck")) {
+				// It should be unchecked, uncheck it
+				checkbox.click();
+			} else if (!checkboxChecked && valueToSet.equalsIgnoreCase("check")) {
+				// value is unchecked, if it should be checked, click it
+				checkbox.click();
+			}
+		}
+	}
+
+	/**
+	 * Check radio button depending on specified in data driven excel sheet
+	 * @param sourceCodeManagement
+	 */
+	private void setSourceCodeManagement(String sourceCodeManagement) {
+		if (sourceCodeManagement.equalsIgnoreCase("None")) {
+			driver.findElement(By.id("radio-block-0")).click();
+		} else if (sourceCodeManagement.equalsIgnoreCase("CVS")) {
+			driver.findElement(By.id("radio-block-1")).click();
+		} else if (sourceCodeManagement.equalsIgnoreCase("")) {
+			// do nothing
+		} else {
+			Assert.fail("UNknown naming strategy: " + sourceCodeManagement);
+		}
+	}
+	
 }

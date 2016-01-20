@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestBrowsers" time="43.289" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="TestBrowsers" time="9.063" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="_Run Selenium"/>
@@ -12,7 +12,7 @@
     <property name="POM_ARTIFACTID" value="GridAndJenkins"/>
     <property name="os.name" value="Windows 7"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_07\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_07\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -25,7 +25,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="ProgramFiles" value="C:\Program Files"/>
     <property name="user.language" value="en"/>
-    <property name="BUILD_DISPLAY_NAME" value="#22"/>
+    <property name="BUILD_DISPLAY_NAME" value="#34"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_07\jre\bin"/>
     <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="2f74099e0b9ee284871704ebd7e332d6d8fadd47"/>
     <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
@@ -36,7 +36,7 @@
     <property name="sun.arch.data.model" value="32"/>
     <property name="NODE_NAME" value="master"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_07\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="22"/>
+    <property name="BUILD_ID" value="34"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -72,7 +72,7 @@
     <property name="POM_GROUPID" value="Week6"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
     <property name="user.home" value="C:\Windows\System32\config\systemprofile"/>
-    <property name="BUILD_TAG" value="jenkins-_Run Selenium-22"/>
+    <property name="BUILD_TAG" value="jenkins-_Run Selenium-34"/>
     <property name="JENKINS_SERVER_COOKIE" value="cbb50deead534daf"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -80,15 +80,15 @@
     <property name="USERPROFILE" value="C:\Windows\system32\config\systemprofile"/>
     <property name="CLASSPATH" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_07\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\/bin;C:\Program Files\Java\jdk1.7.0_07/bin;C:\Program Files\Java\jdk1.7.0_07/bin;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\compare;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\composite;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\conjure;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\convert;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\identify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\mogrify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\montage;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\stream;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_07\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\TortoiseGit\bin;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\platform-tools;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\tools;C:\Program Files\HP\LoadRunner\strawberry-perl\perl\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Ruby200\bin\ruby.exe,C:\Softwares\IEDriverServer.exe, C:\Softwares\chromedriver.exe;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_07\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\/bin;C:\Program Files\Java\jdk1.7.0_07/bin;C:\Program Files\Java\jdk1.7.0_07/bin;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\compare;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\composite;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\conjure;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\convert;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\identify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\mogrify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\montage;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\stream;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_07\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\TortoiseGit\bin;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\platform-tools;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\tools;C:\Program Files\HP\LoadRunner\strawberry-perl\perl\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Ruby200\bin\ruby.exe, C:\Softwares\chromedriver.exe, C:\Softwares\IEDriverServer.exe;;."/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="APPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Roaming"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2"/>
     <property name="java.class.path" value="C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.5.jar;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\boot\plexus-classworlds-2.5.1.jar;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\ C:\Program Files\Jenkins\war\WEB-INF\lib\remoting-2.53.2.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 2451"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven31Main C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\ C:\Program Files\Jenkins\war\WEB-INF\lib\remoting-2.53.2.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Program Files\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 2843"/>
     <property name="LG_PATH" value="C:\Program Files\HP\LoadRunner\"/>
-    <property name="Path" value="C:\Program Files\Java\jdk1.7.0_07/bin;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\compare;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\composite;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\conjure;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\convert;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\identify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\mogrify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\montage;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\stream;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_07\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\TortoiseGit\bin;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\platform-tools;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\tools;C:\Program Files\HP\LoadRunner\strawberry-perl\perl\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Ruby200\bin\ruby.exe,C:\Softwares\IEDriverServer.exe, C:\Softwares\chromedriver.exe;"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.7.0_07/bin;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\compare;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\composite;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\conjure;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\convert;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\identify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\mogrify;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\montage;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows\stream;C:\Program Files\ImageMagick-6.9.0-0-Q16-x86-windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_07\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\TortoiseGit\bin;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\platform-tools;C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\tools;C:\Program Files\HP\LoadRunner\strawberry-perl\perl\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Ruby200\bin\ruby.exe, C:\Softwares\chromedriver.exe, C:\Softwares\IEDriverServer.exe;"/>
     <property name="VS120COMNTOOLS" value="C:\Program Files\Microsoft Visual Studio 12.0\Common7\Tools\"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
@@ -102,7 +102,7 @@
     <property name="OS" value="Windows_NT"/>
     <property name="HUDSON_HOME" value="C:\Program Files\Jenkins"/>
     <property name="PATH+MAVEN" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\/bin"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/_Run%20Selenium/22/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/_Run%20Selenium/34/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="x86"/>
@@ -115,7 +115,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.2-bin\apache-maven-3.2.2\"/>
     <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
-    <property name="BUILD_NUMBER" value="22"/>
+    <property name="BUILD_NUMBER" value="34"/>
     <property name="BASE" value="C:\Program Files\Jenkins"/>
     <property name="ANDROID_HOME" value="C:\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
@@ -134,6 +134,5 @@
     <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
     <property name="GIT_URL" value="https://github.com/ckauffman/SeleniumClass"/>
   </properties>
-  <testcase name="testProjectByFirefox" classname="TestBrowsers" time="22.569"/>
-  <testcase name="testProjectByChrome" classname="TestBrowsers" time="20.72"/>
+  <testcase name="testProjectByChrome" classname="TestBrowsers" time="9.063"/>
 </testsuite>

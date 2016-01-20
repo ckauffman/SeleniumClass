@@ -1,4 +1,4 @@
-package week5Browsers;
+package gmailGuruXp;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;

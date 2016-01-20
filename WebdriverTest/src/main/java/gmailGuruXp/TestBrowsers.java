@@ -1,4 +1,4 @@
-package week5Browsers;
+package gmailGuruXp;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;

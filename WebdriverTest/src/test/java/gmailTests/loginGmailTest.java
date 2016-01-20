@@ -4,13 +4,15 @@ package gmailTests;
  */
 
 //import static org.junit.Assert.assertEquals;
-import gmail.LoginPage;
 import gmailGuruTests.Util;
+import gmailGuruXp.LoginPage;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 //import junit.framework.Assert;
+
+
 
 
 

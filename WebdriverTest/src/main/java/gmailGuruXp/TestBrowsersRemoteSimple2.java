@@ -1,4 +1,4 @@
-package week6bGridAndJenkins;
+package gmailGuruXp;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 import static java.lang.Thread.sleep;
 import static org.junit.Assert.fail;
 
-public class TestBrowsersRemoteSimple {
+public class TestBrowsersRemoteSimple2 {
 
     @Test
     public void testProject() {

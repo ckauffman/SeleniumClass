@@ -1,4 +1,4 @@
-package week5Browsers;
+package gmailGuruXp;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class ConfigureProjects {
+public class AddProject2 {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -23,18 +23,16 @@ public class ConfigureProjects {
   }
 
   @Test
-  public void testConfigureProjects() throws Exception {
-    driver.get(baseUrl + "/job/First%20Project/");
-    driver.findElement(By.linkText("Configure")).click();
-    driver.findElement(By.name("description")).clear();
-    driver.findElement(By.name("description")).sendKeys("New Description");
-    driver.findElement(By.id("radio-block-0")).click();
-    driver.findElement(By.id("radio-block-1")).click();
-    driver.findElement(By.name("_.cvsRoot")).clear();
-    driver.findElement(By.name("_.cvsRoot")).sendKeys("test");
-    new Select(driver.findElement(By.cssSelector("div[name=\"repositoryItems\"] > table > tbody > tr > td.setting-main > select.setting-input.dropdownList"))).selectByVisibleText("Branch");
-    driver.findElement(By.id("radio-block-0")).click();
-    driver.findElement(By.id("yui-gen30-button")).click();
+  public void testAddProject() throws Exception {
+    driver.get(baseUrl + "/");
+    driver.findElement(By.linkText("New Item")).click();
+    driver.findElement(By.id("name")).clear();
+    driver.findElement(By.id("name")).sendKeys("A selenium test");
+    driver.findElement(By.name("mode")).click();
+    driver.findElement(By.id("ok-button")).click();
+    new Select(driver.findElement(By.name("_.compressionLevel"))).selectByVisibleText("System Default");
+    // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
+    driver.findElement(By.id("yui-gen38-button")).click();
   }
 
   @After
@@ -79,4 +77,3 @@ public class ConfigureProjects {
     }
   }
 }
-

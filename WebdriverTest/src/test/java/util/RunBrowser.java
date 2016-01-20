@@ -1,4 +1,4 @@
-package week6bGridAndJenkins;
+package util;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -17,9 +17,15 @@ import java.util.concurrent.TimeUnit;
 import static com.thoughtworks.selenium.SeleneseTestBase.fail;
 
 public class RunBrowser {
-    WebDriver driver;
+    public WebDriver driver;
     String workingDir = System.getProperty("user.dir");
 
+    
+    /**
+     * Options to run test in Grid or without grid and in multiple browsers id, chrome, firefox.
+     * @param driverType
+     * @param runToGrid
+     */
     public RunBrowser(String driverType, boolean runToGrid) {
         DesiredCapabilities desiredCapabilities = null;
 

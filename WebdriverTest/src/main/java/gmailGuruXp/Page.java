@@ -1,4 +1,4 @@
-package gmail;
+package gmailGuruXp;
 
 public class Page {
 

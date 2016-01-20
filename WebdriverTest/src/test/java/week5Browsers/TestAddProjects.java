@@ -1,5 +1,7 @@
 package week5Browsers;
 
+import gmailGuruXp.RunBrowser;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -13,6 +15,19 @@ import static org.junit.Assert.assertEquals;
 public class TestAddProjects {
     private String baseUrl = "http://localhost:8080/";
 
+    // Test run in different browsers
+    @Test
+    public void testAddProject1() {
+        //addProjectByBrowser("IE");
+        addProjectByBrowser("Chrome");
+    }
+ // Test run in different browsers
+    @Test
+    public void testAddProject2() {
+        addProjectByBrowser("firefox");
+    }
+    
+    // Add project
     public void addProjectByBrowser(String browserVersion){
         //Create a random project name
         String projectName = "project-" + RandomStringUtils.randomAlphabetic(5);;
@@ -30,7 +45,6 @@ public class TestAddProjects {
         new Select(runBrowser.driver.findElement(By.name("_.compressionLevel"))).selectByVisibleText("System Default");
         //Select CVS Projectset radio button
         runBrowser.driver.findElement(By.xpath("//label[contains(text(), 'CVS Projectset')]/input[@name='scm']")).click();
-       // runBrowser.driver.findElement(By.id("cb17")).click();  githubProject
         runBrowser.driver.findElement(By.name("githubProject")).click();  
         // ERROR: Caught exception [Error: Dom locators are not implemented yet!]
         //Select None radio button
@@ -42,18 +56,6 @@ public class TestAddProjects {
         assertEquals("Project " + projectName, runBrowser.driver.findElement(By.cssSelector("h1.job-index-headline.page-headline")).getText());
         //Close the browser
         runBrowser.driver.quit();
-    }
-
-    @Test
-    public void testAddProject1() {
-        //addProjectByBrowser("IE");
-        addProjectByBrowser("Chrome");
-
-    }
-    @Test
-    public void testAddProject2() {
-        addProjectByBrowser("firefox");
-
     }
 }
 

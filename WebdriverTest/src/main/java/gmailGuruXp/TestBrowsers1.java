@@ -1,13 +1,13 @@
-package week6aGrid;
+package gmailGuruXp;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
-public class TestBrowsers {
+public class TestBrowsers1 {
     private boolean runToGrid = true;
     public void testProjectByBrowser(String driverType) {
-        RunBrowser runBrowser = new RunBrowser(driverType, runToGrid);
-        runBrowser.driver.get("http://localhost:8080");
+      //  RunBrowser runBrowser = new RunBrowser(driverType, runToGrid);
+/*        runBrowser.driver.get("http://localhost:8080");
         runBrowser.driver.findElement(By.linkText("New Item")).click();
         runBrowser.driver.findElement(By.id("name")).clear();
         runBrowser.driver.findElement(By.id("name")).sendKeys("A selenium " + RandomStringUtils.randomAlphabetic(5));
@@ -16,7 +16,7 @@ public class TestBrowsers {
 
         runBrowser.driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
         //runBrowser.driver.findElement(By.id("yui-gen30-button")).click();
-        runBrowser.driver.quit();
+        runBrowser.driver.quit();*/
 
     }
 
