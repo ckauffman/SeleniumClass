@@ -44,6 +44,9 @@ WebElement saveButton;
 @FindBy(linkText = "New Item")
 WebElement linkNewItem;
 
+@FindBy(linkText = "Back to Dashboard")
+public WebElement linkBackToDashboard;
+
 @FindBy(id = "yui-gen1-button")
 WebElement btnAreYouSureAboutRenamingProject;
                      //job-index-headline page-headline

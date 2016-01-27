@@ -5,10 +5,9 @@
     <classes>
       <class name="week2POM3DataDriven6Grid.AddProjectByGridPageObjectsTest">
         <methods>
-          <include name="deleteProjectTest"/>
+          <include name="searchHomePageForNewlyCreatedProjectTestingTheVariousWaysToUseXpathInTables"/>
+          <include name="creatProjectTestToSearchOnHomePage"/>
           <include name="setUp"/>
-          <include name="editProjectTest"/>
-          <include name="creatProjectTest"/>
         </methods>
       </class> <!-- week2POM3DataDriven6Grid.AddProjectByGridPageObjectsTest -->
     </classes>
